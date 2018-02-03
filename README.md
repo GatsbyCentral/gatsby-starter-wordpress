@@ -8,7 +8,7 @@ A starter skeleton that leveraged the WordPress API for [Gatsby](https://github.
 
 #### This Project was forked from [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter)
 
-### [Demo](https://gatsby-docs-starter.netlify.com/)
+### [Demo](https://gatsby-wordpress-starter.netlify.com/)
 
 ## Features
 
