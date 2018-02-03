@@ -17,11 +17,8 @@ class Index extends React.Component {
         <MainContentContainer>
           <h1>Gatsby + Wordpress Blog</h1>
           <p>
-            Bacon ipsum dolor amet prosciutto sirloin shank ham ball tip pork
-            belly pig doner drumstick cupim. Rump picanha turkey meatball short
-            ribs ham hock swine pancetta fatback shankle. Ball tip prosciutto
-            pancetta, kielbasa rump pork ham hock pastrami kevin ribeye ham
-            venison tail beef corned beef.{' '}
+            Created by Eric Windmill. You should follow him on{' '}
+            <a href="https://twitter.com/ericwindmill">Twitter</a>
           </p>
           <Divider />
           <PostListing postEdges={postEdges} />
