@@ -1,0 +1,93 @@
+[
+    {
+        "componentChunkName": "component---cache-dev-404-page-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-jsx",
+        "jsonName": "dev-404-page.json",
+        "path": "/dev-404-page/"
+    },
+    {
+        "componentChunkName": "component---src-templates-wp-page-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-jsx",
+        "jsonName": "about.json",
+        "path": "/about/"
+    },
+    {
+        "componentChunkName": "component---src-templates-post-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-jsx",
+        "jsonName": "text-with-images.json",
+        "path": "/text-with-images"
+    },
+    {
+        "componentChunkName": "component---src-templates-post-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-jsx",
+        "jsonName": "big-markdown-test.json",
+        "path": "/big-markdown-test"
+    },
+    {
+        "componentChunkName": "component---src-templates-post-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-jsx",
+        "jsonName": "test-syntax-highlighter.json",
+        "path": "/test-syntax-highlighter"
+    },
+    {
+        "componentChunkName": "component---src-templates-tag-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-jsx",
+        "jsonName": "tags-dart.json",
+        "path": "/tags/dart/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tag-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-jsx",
+        "jsonName": "tags-flutter.json",
+        "path": "/tags/flutter/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tag-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-jsx",
+        "jsonName": "tags-tech.json",
+        "path": "/tags/tech/"
+    },
+    {
+        "componentChunkName": "component---src-templates-tag-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-jsx",
+        "jsonName": "tags-flutter-dart.json",
+        "path": "/tags/flutter-dart/"
+    },
+    {
+        "componentChunkName": "component---src-templates-category-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-jsx",
+        "jsonName": "categories-life.json",
+        "path": "/categories/life/"
+    },
+    {
+        "componentChunkName": "component---src-templates-category-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-jsx",
+        "jsonName": "categories-programming.json",
+        "path": "/categories/programming/"
+    },
+    {
+        "componentChunkName": "component---src-templates-category-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-jsx",
+        "jsonName": "categories-uncategorized.json",
+        "path": "/categories/uncategorized/"
+    },
+    {
+        "componentChunkName": "component---src-pages-index-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-jsx",
+        "jsonName": "index.json",
+        "path": "/"
+    }
+]

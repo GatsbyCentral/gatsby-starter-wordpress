@@ -1,0 +1,1444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="94ed42af-eadd-45f6-b83b-41cff16b7875" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Accessories/Logo.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Layout/Navigation/Navigation.jsx" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileColors">
+    <fileColor scope="Non-Project Files (Material Default)" color="2E3C43" />
+    <fileColor scope="Non-Project Files (Material Darker)" color="323232" />
+    <fileColor scope="Non-Project Files (Material Lighter)" color="eae8e8" />
+    <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="post.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/templates/post.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="557">
+              <caret line="93" column="15" lean-forward="false" selection-start-line="93" selection-start-column="15" selection-end-line="93" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+                <marker date="1517694712627" expanded="true" signature="1821:1923" ph="..." />
+                <marker date="1517694712627" expanded="true" signature="1983:2064" ph="..." />
+                <marker date="1517694712627" expanded="true" signature="2230:2384" ph="{...}" />
+                <marker date="1517694712627" expanded="true" signature="2286:2383" ph="{...}" />
+                <marker date="1517694712627" expanded="true" signature="2286:2384" ph="{...}" />
+                <marker date="1517694712627" expanded="true" signature="2352:2379" ph="{...}" />
+                <marker date="1517694712627" expanded="true" signature="2414:2465" ph="{...}" />
+                <marker date="1517694712627" expanded="true" signature="2499:2671" ph="{...}" />
+                <marker date="1517694712627" expanded="true" signature="2569:2609" ph="{...}" />
+                <marker date="1517694712627" expanded="true" signature="2666:2670" ph="{...}" />
+                <marker date="1517694712627" expanded="true" signature="2666:2671" ph="{...}" />
+                <marker date="1517694712627" expanded="true" signature="2738:3331" ph="query...{&#10;    wordpressPost(id: { eq: $id }) {&#10;      title&#10;      slug&#10;      content&#10;      date&#10;      categories {&#10;        name&#10;      }&#10;      tags {&#10;        name&#10;      }&#10;    }&#10;  }" />
+                <marker date="1517694712627" expanded="true" signature="2744:2752" ph="PostById...PostById" />
+                <marker date="1517694712627" expanded="true" signature="2752:2766" ph="(...)" />
+                <marker date="1517694712627" expanded="true" signature="2758:2764" ph="String...String" />
+                <marker date="1517694712627" expanded="true" signature="2767:3331" ph="{...}" />
+                <marker date="1517694712627" expanded="true" signature="2773:2786" ph="wordpressPost...wordpressPost" />
+                <marker date="1517694712627" expanded="true" signature="2773:3207" ph="wordpressPost...{&#10;      title&#10;      slug&#10;      content&#10;      date&#10;      categories {&#10;        name&#10;      }&#10;      tags {&#10;        name&#10;      }&#10;    }" />
+                <marker date="1517694712627" expanded="true" signature="2786:2803" ph="(...)" />
+                <marker date="1517694712627" expanded="true" signature="2787:2789" ph="id...id" />
+                <marker date="1517694712627" expanded="true" signature="2787:2802" ph="id...{ eq: $id }" />
+                <marker date="1517694712627" expanded="true" signature="2791:2802" ph="{...}" />
+                <marker date="1517694712627" expanded="true" signature="2793:2795" ph="eq...eq" />
+                <marker date="1517694712627" expanded="true" signature="2804:3207" ph="{...}" />
+                <marker date="1517694712627" expanded="true" signature="2812:2826" ph="featured_media...featured_media" />
+                <marker date="1517694712627" expanded="true" signature="2812:2855" ph="featured_media...{&#10;        source_url&#10;      }" />
+                <marker date="1517694712627" expanded="true" signature="2827:2855" ph="{...}" />
+                <marker date="1517694712627" expanded="true" signature="2837:2847" ph="source_url...source_url" />
+                <marker date="1517694712627" expanded="true" signature="2862:2868" ph="author...author" />
+                <marker date="1517694712627" expanded="true" signature="2862:2992" ph="author...{&#10;        name&#10;        avatar_urls {&#10;          wordpress_24&#10;          wordpress_48&#10;          wordpress_96&#10;        }&#10;      }" />
+                <marker date="1517694712627" expanded="true" signature="2869:2992" ph="{...}" />
+                <marker date="1517694712627" expanded="true" signature="2879:2883" ph="name...name" />
+                <marker date="1517694712627" expanded="true" signature="2892:2903" ph="avatar_urls...avatar_urls" />
+                <marker date="1517694712627" expanded="true" signature="2892:2984" ph="avatar_urls...{&#10;          wordpress_24&#10;          wordpress_48&#10;          wordpress_96&#10;        }" />
+                <marker date="1517694712627" expanded="true" signature="2904:2984" ph="{...}" />
+                <marker date="1517694712627" expanded="true" signature="2916:2928" ph="wordpress_24...wordpress_24" />
+                <marker date="1517694712627" expanded="true" signature="2939:2951" ph="wordpress_48...wordpress_48" />
+                <marker date="1517694712627" expanded="true" signature="2962:2974" ph="wordpress_96...wordpress_96" />
+                <marker date="1517694712627" expanded="true" signature="2999:3003" ph="date...date" />
+                <marker date="1517694712627" expanded="true" signature="3010:3014" ph="slug...slug" />
+                <marker date="1517694712627" expanded="true" signature="3021:3026" ph="title...title" />
+                <marker date="1517694712627" expanded="true" signature="3033:3041" ph="modified...modified" />
+                <marker date="1517694712627" expanded="true" signature="3048:3055" ph="excerpt...excerpt" />
+                <marker date="1517694712627" expanded="true" signature="3062:3064" ph="id...id" />
+                <marker date="1517694712627" expanded="true" signature="3071:3074" ph="acf...acf" />
+                <marker date="1517694712627" expanded="true" signature="3071:3113" ph="acf...{&#10;        project&#10;        date&#10;      }" />
+                <marker date="1517694712627" expanded="true" signature="3075:3113" ph="{...}" />
+                <marker date="1517694712627" expanded="true" signature="3085:3092" ph="project...project" />
+                <marker date="1517694712627" expanded="true" signature="3101:3105" ph="date...date" />
+                <marker date="1517694712627" expanded="true" signature="3120:3130" ph="categories...categories" />
+                <marker date="1517694712627" expanded="true" signature="3120:3153" ph="categories...{&#10;        name&#10;      }" />
+                <marker date="1517694712627" expanded="true" signature="3131:3153" ph="{...}" />
+                <marker date="1517694712627" expanded="true" signature="3141:3145" ph="name...name" />
+                <marker date="1517694712627" expanded="true" signature="3160:3164" ph="tags...tags" />
+                <marker date="1517694712627" expanded="true" signature="3160:3187" ph="tags...{&#10;        name&#10;      }" />
+                <marker date="1517694712627" expanded="true" signature="3165:3187" ph="{...}" />
+                <marker date="1517694712627" expanded="true" signature="3175:3179" ph="name...name" />
+                <marker date="1517694712627" expanded="true" signature="3194:3201" ph="content...content" />
+                <marker date="1517694712627" expanded="true" signature="3212:3228" ph="allWordpressPage...allWordpressPage" />
+                <marker date="1517694712627" expanded="true" signature="3212:3327" ph="allWordpressPage...{&#10;      edges {&#10;        node {&#10;          slug&#10;          title&#10;          id&#10;        }&#10;      }&#10;    }" />
+                <marker date="1517694712627" expanded="true" signature="3229:3327" ph="{...}" />
+                <marker date="1517694712627" expanded="true" signature="3237:3242" ph="edges...edges" />
+                <marker date="1517694712627" expanded="true" signature="3237:3321" ph="edges...{&#10;        node {&#10;          slug&#10;          title&#10;          id&#10;        }&#10;      }" />
+                <marker date="1517694712627" expanded="true" signature="3243:3321" ph="{...}" />
+                <marker date="1517694712627" expanded="true" signature="3253:3257" ph="node...node" />
+                <marker date="1517694712627" expanded="true" signature="3253:3313" ph="node...{&#10;          slug&#10;          title&#10;          id&#10;        }" />
+                <marker date="1517694712627" expanded="true" signature="3258:3313" ph="{...}" />
+                <marker date="1517694712627" expanded="true" signature="3270:3274" ph="slug...slug" />
+                <marker date="1517694712627" expanded="true" signature="3285:3290" ph="title...title" />
+                <marker date="1517694712627" expanded="true" signature="3301:3303" ph="id...id" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>relative</find>
+      <find>console</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/components/Disqus/Disqus.jsx" />
+        <option value="$PROJECT_DIR$/src/components/PostListing/PostListing.jsx" />
+        <option value="$PROJECT_DIR$/src/components/SEO/SEO.jsx" />
+        <option value="$PROJECT_DIR$/gatsby-node-test.js" />
+        <option value="$PROJECT_DIR$/src/components/PostTags/PostTags.jsx" />
+        <option value="$PROJECT_DIR$/src/components/SocialLinks/SocialLinks.jsx" />
+        <option value="$PROJECT_DIR$/src/templates/Navigation.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Accessories/Logo.jsx" />
+        <option value="$PROJECT_DIR$/data/SiteConfig.js" />
+        <option value="$PROJECT_DIR$/gatsby-config.js" />
+        <option value="$PROJECT_DIR$/src/components/Layout/Navigation/Navigation.jsx" />
+        <option value="$PROJECT_DIR$/gatsby-node.js" />
+        <option value="$PROJECT_DIR$/src/templates/wp_page.jsx" />
+        <option value="$PROJECT_DIR$/todo.md" />
+        <option value="$PROJECT_DIR$/src/pages/index.jsx" />
+        <option value="$PROJECT_DIR$/src/templates/b16-tomorrow-dark.css" />
+        <option value="$PROJECT_DIR$/src/layouts/index.css" />
+        <option value="$PROJECT_DIR$/src/components/Posts/PostTags/PostTags.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Posts/PostListing/PostListing.jsx" />
+        <option value="$PROJECT_DIR$/src/templates/category.jsx" />
+        <option value="$PROJECT_DIR$/src/templates/tag.jsx" />
+        <option value="$PROJECT_DIR$/src/templates/post.jsx" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2232" />
+    <option name="y" value="22" />
+    <option name="width" value="1607" />
+    <option name="height" value="1058" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="gatsby_wordpress_starter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gatsby_wordpress_starter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gatsby_wordpress_starter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gatsby_wordpress_starter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gatsby_wordpress_starter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gatsby_wordpress_starter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gatsby_wordpress_starter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gatsby_wordpress_starter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gatsby_wordpress_starter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gatsby_wordpress_starter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Layout" type="462c0819:PsiDirectoryNode" />
+              <item name="Navigation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gatsby_wordpress_starter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gatsby_wordpress_starter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Posts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gatsby_wordpress_starter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gatsby_wordpress_starter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Posts" type="462c0819:PsiDirectoryNode" />
+              <item name="PostListing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gatsby_wordpress_starter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gatsby_wordpress_starter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Posts" type="462c0819:PsiDirectoryNode" />
+              <item name="PostTags" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gatsby_wordpress_starter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gatsby_wordpress_starter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gatsby_wordpress_starter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gatsby_wordpress_starter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gatsby_wordpress_starter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gatsby_wordpress_starter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="jsgraphql-schema-editor-notification" value="false" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.selected.package.stylelint" value="$PROJECT_DIR$/node_modules/stylelint" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Accessories" />
+      <recent name="$PROJECT_DIR$/src/components/Pages" />
+      <recent name="$PROJECT_DIR$/src/components/Posts" />
+      <recent name="$PROJECT_DIR$/src/components/Layout" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="94ed42af-eadd-45f6-b83b-41cff16b7875" name="Default" comment="" />
+      <created>1515021804302</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1515021804302</updated>
+      <workItem from="1515021806215" duration="3495000" />
+      <workItem from="1515105590286" duration="5394000" />
+      <workItem from="1516050981182" duration="7433000" />
+      <workItem from="1516200675566" duration="95000" />
+      <workItem from="1516200779930" duration="86000" />
+      <workItem from="1516200875303" duration="831000" />
+      <workItem from="1516202213169" duration="618000" />
+      <workItem from="1516217897333" duration="2000" />
+      <workItem from="1516382958306" duration="3350000" />
+      <workItem from="1517678195182" duration="11272000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="32576000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="2232" y="22" width="1607" height="1058" extended-state="0" />
+    <layout>
+      <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="GraphQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39574468" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287234" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3106383" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19065899" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/index.jsx</url>
+          <properties />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/templates/category.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+          <folding>
+            <marker date="1517694443089" expanded="true" signature="7:282" ph="..." />
+            <marker date="1517694443089" expanded="true" signature="346:843" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="359:841" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="488:831" ph="&lt;div/&gt;" />
+            <marker date="1517694443089" expanded="true" signature="676:818" ph="&lt;MainContentContainer/&gt;" />
+            <marker date="1517694443089" expanded="true" signature="885:1104" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="929:1005" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1011:1062" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1070:1103" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1107:1134" ph="/*...*/" />
+            <marker date="1517694443089" expanded="true" signature="1171:1899" ph="query...{&#10;    allWordpressPost {&#10;      edges {&#10;        node {&#10;          featured_media {&#10;            source_url&#10;          }&#10;          author {&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }&#10;          date&#10;          slug&#10;          title&#10;          modified&#10;          excerpt&#10;          id&#10;          acf {&#10;            project&#10;            date&#10;          }&#10;          categories {&#10;            name&#10;          }&#10;          tags {&#10;            name&#10;          }&#10;          content&#10;        }&#10;      }&#10;    }&#10;    allWordpressPage {&#10;      edges {&#10;        node {&#10;          slug&#10;          title&#10;          id&#10;        }&#10;      }&#10;    }&#10;  }" />
+            <marker date="1517694443089" expanded="true" signature="1177:1189" ph="CategoryPage...CategoryPage" />
+            <marker date="1517694443089" expanded="true" signature="1190:1899" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1196:1212" ph="allWordpressPost...allWordpressPost" />
+            <marker date="1517694443089" expanded="true" signature="1196:1775" ph="allWordpressPost...{&#10;      edges {&#10;        node {&#10;          featured_media {&#10;            source_url&#10;          }&#10;          author {&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }&#10;          date&#10;          slug&#10;          title&#10;          modified&#10;          excerpt&#10;          id&#10;          acf {&#10;            project&#10;            date&#10;          }&#10;          categories {&#10;            name&#10;          }&#10;          tags {&#10;            name&#10;          }&#10;          content&#10;        }&#10;      }&#10;    }" />
+            <marker date="1517694443089" expanded="true" signature="1213:1775" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1221:1226" ph="edges...edges" />
+            <marker date="1517694443089" expanded="true" signature="1221:1769" ph="edges...{&#10;        node {&#10;          featured_media {&#10;            source_url&#10;          }&#10;          author {&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }&#10;          date&#10;          slug&#10;          title&#10;          modified&#10;          excerpt&#10;          id&#10;          acf {&#10;            project&#10;            date&#10;          }&#10;          categories {&#10;            name&#10;          }&#10;          tags {&#10;            name&#10;          }&#10;          content&#10;        }&#10;      }" />
+            <marker date="1517694443089" expanded="true" signature="1227:1769" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1237:1241" ph="node...node" />
+            <marker date="1517694443089" expanded="true" signature="1237:1761" ph="node...{&#10;          featured_media {&#10;            source_url&#10;          }&#10;          author {&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }&#10;          date&#10;          slug&#10;          title&#10;          modified&#10;          excerpt&#10;          id&#10;          acf {&#10;            project&#10;            date&#10;          }&#10;          categories {&#10;            name&#10;          }&#10;          tags {&#10;            name&#10;          }&#10;          content&#10;        }" />
+            <marker date="1517694443089" expanded="true" signature="1242:1761" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1254:1268" ph="featured_media...featured_media" />
+            <marker date="1517694443089" expanded="true" signature="1254:1305" ph="featured_media...{&#10;            source_url&#10;          }" />
+            <marker date="1517694443089" expanded="true" signature="1269:1305" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1283:1293" ph="source_url...source_url" />
+            <marker date="1517694443089" expanded="true" signature="1316:1322" ph="author...author" />
+            <marker date="1517694443089" expanded="true" signature="1316:1474" ph="author...{&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }" />
+            <marker date="1517694443089" expanded="true" signature="1323:1474" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1337:1341" ph="name...name" />
+            <marker date="1517694443089" expanded="true" signature="1354:1365" ph="avatar_urls...avatar_urls" />
+            <marker date="1517694443089" expanded="true" signature="1354:1462" ph="avatar_urls...{&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }" />
+            <marker date="1517694443089" expanded="true" signature="1366:1462" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1382:1394" ph="wordpress_24...wordpress_24" />
+            <marker date="1517694443089" expanded="true" signature="1409:1421" ph="wordpress_48...wordpress_48" />
+            <marker date="1517694443089" expanded="true" signature="1436:1448" ph="wordpress_96...wordpress_96" />
+            <marker date="1517694443089" expanded="true" signature="1485:1489" ph="date...date" />
+            <marker date="1517694443089" expanded="true" signature="1500:1504" ph="slug...slug" />
+            <marker date="1517694443089" expanded="true" signature="1515:1520" ph="title...title" />
+            <marker date="1517694443089" expanded="true" signature="1531:1539" ph="modified...modified" />
+            <marker date="1517694443089" expanded="true" signature="1550:1557" ph="excerpt...excerpt" />
+            <marker date="1517694443089" expanded="true" signature="1568:1570" ph="id...id" />
+            <marker date="1517694443089" expanded="true" signature="1581:1584" ph="acf...acf" />
+            <marker date="1517694443089" expanded="true" signature="1581:1635" ph="acf...{&#10;            project&#10;            date&#10;          }" />
+            <marker date="1517694443089" expanded="true" signature="1585:1635" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1599:1606" ph="project...project" />
+            <marker date="1517694443089" expanded="true" signature="1619:1623" ph="date...date" />
+            <marker date="1517694443089" expanded="true" signature="1646:1656" ph="categories...categories" />
+            <marker date="1517694443089" expanded="true" signature="1646:1687" ph="categories...{&#10;            name&#10;          }" />
+            <marker date="1517694443089" expanded="true" signature="1657:1687" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1671:1675" ph="name...name" />
+            <marker date="1517694443089" expanded="true" signature="1698:1702" ph="tags...tags" />
+            <marker date="1517694443089" expanded="true" signature="1698:1733" ph="tags...{&#10;            name&#10;          }" />
+            <marker date="1517694443089" expanded="true" signature="1703:1733" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1717:1721" ph="name...name" />
+            <marker date="1517694443089" expanded="true" signature="1744:1751" ph="content...content" />
+            <marker date="1517694443089" expanded="true" signature="1780:1796" ph="allWordpressPage...allWordpressPage" />
+            <marker date="1517694443089" expanded="true" signature="1780:1895" ph="allWordpressPage...{&#10;      edges {&#10;        node {&#10;          slug&#10;          title&#10;          id&#10;        }&#10;      }&#10;    }" />
+            <marker date="1517694443089" expanded="true" signature="1797:1895" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1805:1810" ph="edges...edges" />
+            <marker date="1517694443089" expanded="true" signature="1805:1889" ph="edges...{&#10;        node {&#10;          slug&#10;          title&#10;          id&#10;        }&#10;      }" />
+            <marker date="1517694443089" expanded="true" signature="1811:1889" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1821:1825" ph="node...node" />
+            <marker date="1517694443089" expanded="true" signature="1821:1881" ph="node...{&#10;          slug&#10;          title&#10;          id&#10;        }" />
+            <marker date="1517694443089" expanded="true" signature="1826:1881" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1838:1842" ph="slug...slug" />
+            <marker date="1517694443089" expanded="true" signature="1853:1858" ph="title...title" />
+            <marker date="1517694443089" expanded="true" signature="1869:1871" ph="id...id" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gatsby-node.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2928">
+          <caret line="122" column="15" lean-forward="false" selection-start-line="122" selection-start-column="15" selection-end-line="122" selection-end-column="15" />
+          <folding>
+            <marker date="1517688119298" expanded="true" signature="186:303" ph="//..." />
+            <marker date="1517688119298" expanded="true" signature="365:3736" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="454:3733" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="785:1297" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="814:894" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="1088:1288" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="1111:1277" ph="{&quot;path&quot;: `/${edge.node.slug}/`...}" />
+            <marker date="1517688119298" expanded="true" signature="1219:1265" ph="{&quot;id&quot;: edge.node.id...}" />
+            <marker date="1517688119298" expanded="true" signature="1359:3704" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="1826:3695" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="1857:1943" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="2084:2251" ph="//..." />
+            <marker date="1517688119298" expanded="true" signature="2313:2799" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="2419:2468" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="2523:2583" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="2609:2786" ph="{&quot;path&quot;: `/${edge.node.slug}`...}" />
+            <marker date="1517688119298" expanded="true" signature="2722:2772" ph="{&quot;id&quot;: edge.node.id...}" />
+            <marker date="1517688119298" expanded="true" signature="3189:3403" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="3214:3390" ph="{&quot;path&quot;: `/tags/${_.kebabCase(tag)}/`...}" />
+            <marker date="1517688119298" expanded="true" signature="3335:3376" ph="{&quot;id&quot;: tag...}" />
+            <marker date="1517688119298" expanded="true" signature="3438:3664" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="3463:3651" ph="{&quot;path&quot;: `/categories/${_.kebabCase(cat)}/`...}" />
+            <marker date="1517688119298" expanded="true" signature="3596:3637" ph="{&quot;id&quot;: cat...}" />
+            <marker date="1517688119298" expanded="true" signature="3791:3891" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="3829:3889" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Posts/PostTags/PostTags.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="888">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <marker date="1517693192606" expanded="true" signature="7:133" ph="..." />
+            <marker date="1517693192606" expanded="true" signature="168:806" ph="{...}" />
+            <marker date="1517693192606" expanded="true" signature="191:265" ph="{...}" />
+            <marker date="1517693192606" expanded="true" signature="283:427" ph="{...}" />
+            <marker date="1517693192606" expanded="true" signature="365:402" ph="{...}" />
+            <marker date="1517693192606" expanded="true" signature="440:804" ph="{...}" />
+            <marker date="1517693192606" expanded="true" signature="497:794" ph="&lt;PostTagsContainer/&gt;" />
+            <marker date="1517693192606" expanded="true" signature="574:753" ph="&lt;Link/&gt;" />
+            <marker date="1517693192606" expanded="true" signature="845:933" ph="{...}" />
+            <marker date="1517693192606" expanded="true" signature="882:932" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/tag.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <marker date="1517694473317" expanded="true" signature="7:282" ph="..." />
+            <marker date="1517694473317" expanded="true" signature="341:829" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="354:827" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="478:817" ph="&lt;div/&gt;" />
+            <marker date="1517694473317" expanded="true" signature="661:804" ph="&lt;MainContentContainer/&gt;" />
+            <marker date="1517694473317" expanded="true" signature="872:1091" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="916:992" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="998:1049" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1057:1090" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1094:1121" ph="/*...*/" />
+            <marker date="1517694473317" expanded="true" signature="1158:1881" ph="query...{&#10;    allWordpressPost {&#10;      totalCount&#10;      edges {&#10;        node {&#10;          slug&#10;          title&#10;          tags {&#10;            name&#10;          }&#10;          date&#10;        }&#10;      }&#10;    }&#10;    allWordpressPage {&#10;      edges {&#10;        node {&#10;          slug&#10;          title&#10;          id&#10;        }&#10;      }&#10;    }&#10;  }" />
+            <marker date="1517694473317" expanded="true" signature="1164:1171" ph="TagPage...TagPage" />
+            <marker date="1517694473317" expanded="true" signature="1172:1881" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1178:1194" ph="allWordpressPost...allWordpressPost" />
+            <marker date="1517694473317" expanded="true" signature="1178:1757" ph="allWordpressPost...{&#10;      edges {&#10;        node {&#10;          featured_media {&#10;            source_url&#10;          }&#10;          author {&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }&#10;          date&#10;          slug&#10;          title&#10;          modified&#10;          excerpt&#10;          id&#10;          acf {&#10;            project&#10;            date&#10;          }&#10;          categories {&#10;            name&#10;          }&#10;          tags {&#10;            name&#10;          }&#10;          content&#10;        }&#10;      }&#10;    }" />
+            <marker date="1517694473317" expanded="true" signature="1195:1757" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1203:1208" ph="edges...edges" />
+            <marker date="1517694473317" expanded="true" signature="1203:1751" ph="edges...{&#10;        node {&#10;          featured_media {&#10;            source_url&#10;          }&#10;          author {&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }&#10;          date&#10;          slug&#10;          title&#10;          modified&#10;          excerpt&#10;          id&#10;          acf {&#10;            project&#10;            date&#10;          }&#10;          categories {&#10;            name&#10;          }&#10;          tags {&#10;            name&#10;          }&#10;          content&#10;        }&#10;      }" />
+            <marker date="1517694473317" expanded="true" signature="1209:1751" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1219:1223" ph="node...node" />
+            <marker date="1517694473317" expanded="true" signature="1219:1743" ph="node...{&#10;          featured_media {&#10;            source_url&#10;          }&#10;          author {&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }&#10;          date&#10;          slug&#10;          title&#10;          modified&#10;          excerpt&#10;          id&#10;          acf {&#10;            project&#10;            date&#10;          }&#10;          categories {&#10;            name&#10;          }&#10;          tags {&#10;            name&#10;          }&#10;          content&#10;        }" />
+            <marker date="1517694473317" expanded="true" signature="1224:1743" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1236:1250" ph="featured_media...featured_media" />
+            <marker date="1517694473317" expanded="true" signature="1236:1287" ph="featured_media...{&#10;            source_url&#10;          }" />
+            <marker date="1517694473317" expanded="true" signature="1251:1287" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1265:1275" ph="source_url...source_url" />
+            <marker date="1517694473317" expanded="true" signature="1298:1304" ph="author...author" />
+            <marker date="1517694473317" expanded="true" signature="1298:1456" ph="author...{&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }" />
+            <marker date="1517694473317" expanded="true" signature="1305:1456" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1319:1323" ph="name...name" />
+            <marker date="1517694473317" expanded="true" signature="1336:1347" ph="avatar_urls...avatar_urls" />
+            <marker date="1517694473317" expanded="true" signature="1336:1444" ph="avatar_urls...{&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }" />
+            <marker date="1517694473317" expanded="true" signature="1348:1444" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1364:1376" ph="wordpress_24...wordpress_24" />
+            <marker date="1517694473317" expanded="true" signature="1391:1403" ph="wordpress_48...wordpress_48" />
+            <marker date="1517694473317" expanded="true" signature="1418:1430" ph="wordpress_96...wordpress_96" />
+            <marker date="1517694473317" expanded="true" signature="1467:1471" ph="date...date" />
+            <marker date="1517694473317" expanded="true" signature="1482:1486" ph="slug...slug" />
+            <marker date="1517694473317" expanded="true" signature="1497:1502" ph="title...title" />
+            <marker date="1517694473317" expanded="true" signature="1513:1521" ph="modified...modified" />
+            <marker date="1517694473317" expanded="true" signature="1532:1539" ph="excerpt...excerpt" />
+            <marker date="1517694473317" expanded="true" signature="1550:1552" ph="id...id" />
+            <marker date="1517694473317" expanded="true" signature="1563:1566" ph="acf...acf" />
+            <marker date="1517694473317" expanded="true" signature="1563:1617" ph="acf...{&#10;            project&#10;            date&#10;          }" />
+            <marker date="1517694473317" expanded="true" signature="1567:1617" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1581:1588" ph="project...project" />
+            <marker date="1517694473317" expanded="true" signature="1601:1605" ph="date...date" />
+            <marker date="1517694473317" expanded="true" signature="1628:1638" ph="categories...categories" />
+            <marker date="1517694473317" expanded="true" signature="1628:1669" ph="categories...{&#10;            name&#10;          }" />
+            <marker date="1517694473317" expanded="true" signature="1639:1669" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1653:1657" ph="name...name" />
+            <marker date="1517694473317" expanded="true" signature="1680:1684" ph="tags...tags" />
+            <marker date="1517694473317" expanded="true" signature="1680:1715" ph="tags...{&#10;            name&#10;          }" />
+            <marker date="1517694473317" expanded="true" signature="1685:1715" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1699:1703" ph="name...name" />
+            <marker date="1517694473317" expanded="true" signature="1726:1733" ph="content...content" />
+            <marker date="1517694473317" expanded="true" signature="1762:1778" ph="allWordpressPage...allWordpressPage" />
+            <marker date="1517694473317" expanded="true" signature="1762:1877" ph="allWordpressPage...{&#10;      edges {&#10;        node {&#10;          slug&#10;          title&#10;          id&#10;        }&#10;      }&#10;    }" />
+            <marker date="1517694473317" expanded="true" signature="1779:1877" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1787:1792" ph="edges...edges" />
+            <marker date="1517694473317" expanded="true" signature="1787:1871" ph="edges...{&#10;        node {&#10;          slug&#10;          title&#10;          id&#10;        }&#10;      }" />
+            <marker date="1517694473317" expanded="true" signature="1793:1871" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1803:1807" ph="node...node" />
+            <marker date="1517694473317" expanded="true" signature="1803:1863" ph="node...{&#10;          slug&#10;          title&#10;          id&#10;        }" />
+            <marker date="1517694473317" expanded="true" signature="1808:1863" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1820:1824" ph="slug...slug" />
+            <marker date="1517694473317" expanded="true" signature="1835:1840" ph="title...title" />
+            <marker date="1517694473317" expanded="true" signature="1851:1853" ph="id...id" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Posts/PostTags/PostTags.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="888">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <marker date="1517693192606" expanded="true" signature="7:133" ph="..." />
+            <marker date="1517693192606" expanded="true" signature="168:806" ph="{...}" />
+            <marker date="1517693192606" expanded="true" signature="191:265" ph="{...}" />
+            <marker date="1517693192606" expanded="true" signature="283:427" ph="{...}" />
+            <marker date="1517693192606" expanded="true" signature="365:402" ph="{...}" />
+            <marker date="1517693192606" expanded="true" signature="440:804" ph="{...}" />
+            <marker date="1517693192606" expanded="true" signature="497:794" ph="&lt;PostTagsContainer/&gt;" />
+            <marker date="1517693192606" expanded="true" signature="574:753" ph="&lt;Link/&gt;" />
+            <marker date="1517693192606" expanded="true" signature="845:933" ph="{...}" />
+            <marker date="1517693192606" expanded="true" signature="882:932" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/tag.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <marker date="1517694473317" expanded="true" signature="7:282" ph="..." />
+            <marker date="1517694473317" expanded="true" signature="341:829" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="354:827" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="478:817" ph="&lt;div/&gt;" />
+            <marker date="1517694473317" expanded="true" signature="661:804" ph="&lt;MainContentContainer/&gt;" />
+            <marker date="1517694473317" expanded="true" signature="872:1091" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="916:992" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="998:1049" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1057:1090" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1094:1121" ph="/*...*/" />
+            <marker date="1517694473317" expanded="true" signature="1158:1881" ph="query...{&#10;    allWordpressPost {&#10;      totalCount&#10;      edges {&#10;        node {&#10;          slug&#10;          title&#10;          tags {&#10;            name&#10;          }&#10;          date&#10;        }&#10;      }&#10;    }&#10;    allWordpressPage {&#10;      edges {&#10;        node {&#10;          slug&#10;          title&#10;          id&#10;        }&#10;      }&#10;    }&#10;  }" />
+            <marker date="1517694473317" expanded="true" signature="1164:1171" ph="TagPage...TagPage" />
+            <marker date="1517694473317" expanded="true" signature="1172:1881" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1178:1194" ph="allWordpressPost...allWordpressPost" />
+            <marker date="1517694473317" expanded="true" signature="1178:1757" ph="allWordpressPost...{&#10;      edges {&#10;        node {&#10;          featured_media {&#10;            source_url&#10;          }&#10;          author {&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }&#10;          date&#10;          slug&#10;          title&#10;          modified&#10;          excerpt&#10;          id&#10;          acf {&#10;            project&#10;            date&#10;          }&#10;          categories {&#10;            name&#10;          }&#10;          tags {&#10;            name&#10;          }&#10;          content&#10;        }&#10;      }&#10;    }" />
+            <marker date="1517694473317" expanded="true" signature="1195:1757" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1203:1208" ph="edges...edges" />
+            <marker date="1517694473317" expanded="true" signature="1203:1751" ph="edges...{&#10;        node {&#10;          featured_media {&#10;            source_url&#10;          }&#10;          author {&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }&#10;          date&#10;          slug&#10;          title&#10;          modified&#10;          excerpt&#10;          id&#10;          acf {&#10;            project&#10;            date&#10;          }&#10;          categories {&#10;            name&#10;          }&#10;          tags {&#10;            name&#10;          }&#10;          content&#10;        }&#10;      }" />
+            <marker date="1517694473317" expanded="true" signature="1209:1751" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1219:1223" ph="node...node" />
+            <marker date="1517694473317" expanded="true" signature="1219:1743" ph="node...{&#10;          featured_media {&#10;            source_url&#10;          }&#10;          author {&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }&#10;          date&#10;          slug&#10;          title&#10;          modified&#10;          excerpt&#10;          id&#10;          acf {&#10;            project&#10;            date&#10;          }&#10;          categories {&#10;            name&#10;          }&#10;          tags {&#10;            name&#10;          }&#10;          content&#10;        }" />
+            <marker date="1517694473317" expanded="true" signature="1224:1743" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1236:1250" ph="featured_media...featured_media" />
+            <marker date="1517694473317" expanded="true" signature="1236:1287" ph="featured_media...{&#10;            source_url&#10;          }" />
+            <marker date="1517694473317" expanded="true" signature="1251:1287" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1265:1275" ph="source_url...source_url" />
+            <marker date="1517694473317" expanded="true" signature="1298:1304" ph="author...author" />
+            <marker date="1517694473317" expanded="true" signature="1298:1456" ph="author...{&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }" />
+            <marker date="1517694473317" expanded="true" signature="1305:1456" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1319:1323" ph="name...name" />
+            <marker date="1517694473317" expanded="true" signature="1336:1347" ph="avatar_urls...avatar_urls" />
+            <marker date="1517694473317" expanded="true" signature="1336:1444" ph="avatar_urls...{&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }" />
+            <marker date="1517694473317" expanded="true" signature="1348:1444" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1364:1376" ph="wordpress_24...wordpress_24" />
+            <marker date="1517694473317" expanded="true" signature="1391:1403" ph="wordpress_48...wordpress_48" />
+            <marker date="1517694473317" expanded="true" signature="1418:1430" ph="wordpress_96...wordpress_96" />
+            <marker date="1517694473317" expanded="true" signature="1467:1471" ph="date...date" />
+            <marker date="1517694473317" expanded="true" signature="1482:1486" ph="slug...slug" />
+            <marker date="1517694473317" expanded="true" signature="1497:1502" ph="title...title" />
+            <marker date="1517694473317" expanded="true" signature="1513:1521" ph="modified...modified" />
+            <marker date="1517694473317" expanded="true" signature="1532:1539" ph="excerpt...excerpt" />
+            <marker date="1517694473317" expanded="true" signature="1550:1552" ph="id...id" />
+            <marker date="1517694473317" expanded="true" signature="1563:1566" ph="acf...acf" />
+            <marker date="1517694473317" expanded="true" signature="1563:1617" ph="acf...{&#10;            project&#10;            date&#10;          }" />
+            <marker date="1517694473317" expanded="true" signature="1567:1617" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1581:1588" ph="project...project" />
+            <marker date="1517694473317" expanded="true" signature="1601:1605" ph="date...date" />
+            <marker date="1517694473317" expanded="true" signature="1628:1638" ph="categories...categories" />
+            <marker date="1517694473317" expanded="true" signature="1628:1669" ph="categories...{&#10;            name&#10;          }" />
+            <marker date="1517694473317" expanded="true" signature="1639:1669" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1653:1657" ph="name...name" />
+            <marker date="1517694473317" expanded="true" signature="1680:1684" ph="tags...tags" />
+            <marker date="1517694473317" expanded="true" signature="1680:1715" ph="tags...{&#10;            name&#10;          }" />
+            <marker date="1517694473317" expanded="true" signature="1685:1715" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1699:1703" ph="name...name" />
+            <marker date="1517694473317" expanded="true" signature="1726:1733" ph="content...content" />
+            <marker date="1517694473317" expanded="true" signature="1762:1778" ph="allWordpressPage...allWordpressPage" />
+            <marker date="1517694473317" expanded="true" signature="1762:1877" ph="allWordpressPage...{&#10;      edges {&#10;        node {&#10;          slug&#10;          title&#10;          id&#10;        }&#10;      }&#10;    }" />
+            <marker date="1517694473317" expanded="true" signature="1779:1877" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1787:1792" ph="edges...edges" />
+            <marker date="1517694473317" expanded="true" signature="1787:1871" ph="edges...{&#10;        node {&#10;          slug&#10;          title&#10;          id&#10;        }&#10;      }" />
+            <marker date="1517694473317" expanded="true" signature="1793:1871" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1803:1807" ph="node...node" />
+            <marker date="1517694473317" expanded="true" signature="1803:1863" ph="node...{&#10;          slug&#10;          title&#10;          id&#10;        }" />
+            <marker date="1517694473317" expanded="true" signature="1808:1863" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1820:1824" ph="slug...slug" />
+            <marker date="1517694473317" expanded="true" signature="1835:1840" ph="title...title" />
+            <marker date="1517694473317" expanded="true" signature="1851:1853" ph="id...id" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/category.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1248">
+          <caret line="56" column="5" lean-forward="false" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/category.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/category.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="22" column="50" lean-forward="false" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/category.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/post.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="44" column="18" lean-forward="true" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gatsby-node.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="51" column="16" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Accessories/SEO/SEO.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gatsby-node.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/html.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Pages/About/About.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Pages/About/About.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Accessories/Disqus/Disqus.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="39" column="6" lean-forward="true" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Layout/Footer/Footer.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Accessories/SEO/SEO.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Accessories/UserInfo/UserInfo.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Accessories/UserLinks/UserLinks.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/about.jsx" />
+    <entry file="file://$PROJECT_DIR$/gatsby-node-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1234">
+          <caret line="15" column="8" lean-forward="true" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Accessories/SocialLinks/SocialLinks.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/src/templates/Navigation.jsx" />
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+          <folding>
+            <marker date="1516063773949" expanded="true" signature="0:2598" ph="{&quot;name&quot;: &quot;gatsby-starter-advanced&quot;...}" />
+            <marker date="1516063773949" expanded="true" signature="215:1421" ph="{&quot;babel-plugin-lodash&quot;: &quot;^3.3.2&quot;...}" />
+            <marker date="1516063773949" expanded="true" signature="1444:1947" ph="{&quot;cli-glob&quot;: &quot;^0.1.0&quot;...}" />
+            <marker date="1516063773949" expanded="true" signature="1963:1981" ph="[...]" />
+            <marker date="1516063773949" expanded="true" signature="2033:2509" ph="{&quot;develop&quot;: &quot;gatsby develop&quot;...}" />
+            <marker date="1516063773949" expanded="true" signature="2529:2596" ph="{...}" />
+            <marker date="1516063773949" expanded="true" signature="2546:2592" ph="[...]" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Layout/Navigation/Navigation.css" />
+    <entry file="file://$PROJECT_DIR$/src/components/Accessories/Logo.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/SiteConfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gatsby-config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1704">
+          <caret line="71" column="27" lean-forward="false" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
+          <folding>
+            <marker date="1517681297762" expanded="true" signature="133:2070" ph="{&quot;pathPrefix&quot;: config.pathPrefix...}" />
+            <marker date="1517681297762" expanded="true" signature="184:572" ph="{...}" />
+            <marker date="1517681297762" expanded="true" signature="245:568" ph="{&quot;title&quot;: config.siteTitle...}" />
+            <marker date="1517681297762" expanded="true" signature="585:2068" ph="[...]" />
+            <marker date="1517681297762" expanded="true" signature="664:1167" ph="{&quot;resolve&quot;: 'gatsby-source-wordpress'...}" />
+            <marker date="1517681297762" expanded="true" signature="723:1161" ph="{&quot;baseUrl&quot;: 'ericwindmill.host'...}" />
+            <marker date="1517681297762" expanded="true" signature="1173:1280" ph="{&quot;resolve&quot;: 'gatsby-plugin-nprogress'...}" />
+            <marker date="1517681297762" expanded="true" signature="1232:1274" ph="{&quot;color&quot;: config.themeColor...}" />
+            <marker date="1517681297762" expanded="true" signature="1404:2035" ph="{&quot;resolve&quot;: 'gatsby-plugin-manifest'...}" />
+            <marker date="1517681297762" expanded="true" signature="1462:2029" ph="{&quot;name&quot;: config.siteTitle...}" />
+            <marker date="1517681297762" expanded="true" signature="1753:2021" ph="[...]" />
+            <marker date="1517681297762" expanded="true" signature="1765:1882" ph="{&quot;src&quot;: '/logos/logo-192x192.png'...}" />
+            <marker date="1517681297762" expanded="true" signature="1894:2011" ph="{&quot;src&quot;: '/logos/logo-512x512.png'...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/favicon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gatsby-node.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="36" column="60" lean-forward="false" selection-start-line="36" selection-start-column="60" selection-end-line="36" selection-end-column="60" />
+          <folding>
+            <marker date="1517688119298" expanded="true" signature="186:303" ph="//..." />
+            <marker date="1517688119298" expanded="true" signature="365:3736" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="454:3733" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="785:1297" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="814:894" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="1088:1288" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="1111:1277" ph="{&quot;path&quot;: `/${edge.node.slug}/`...}" />
+            <marker date="1517688119298" expanded="true" signature="1219:1265" ph="{&quot;id&quot;: edge.node.id...}" />
+            <marker date="1517688119298" expanded="true" signature="1359:3704" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="1826:3695" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="1857:1943" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="2084:2251" ph="//..." />
+            <marker date="1517688119298" expanded="true" signature="2313:2799" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="2419:2468" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="2523:2583" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="2609:2786" ph="{&quot;path&quot;: `/${edge.node.slug}`...}" />
+            <marker date="1517688119298" expanded="true" signature="2722:2772" ph="{&quot;id&quot;: edge.node.id...}" />
+            <marker date="1517688119298" expanded="true" signature="3189:3403" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="3214:3390" ph="{&quot;path&quot;: `/tags/${_.kebabCase(tag)}/`...}" />
+            <marker date="1517688119298" expanded="true" signature="3335:3376" ph="{&quot;id&quot;: tag...}" />
+            <marker date="1517688119298" expanded="true" signature="3438:3664" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="3463:3651" ph="{&quot;path&quot;: `/categories/${_.kebabCase(cat)}/`...}" />
+            <marker date="1517688119298" expanded="true" signature="3596:3637" ph="{&quot;id&quot;: cat...}" />
+            <marker date="1517688119298" expanded="true" signature="3791:3891" ph="{...}" />
+            <marker date="1517688119298" expanded="true" signature="3829:3889" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/wp_page.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="47" column="5" lean-forward="true" selection-start-line="39" selection-start-column="4" selection-end-line="47" selection-end-column="5" />
+          <folding>
+            <marker date="1517688801617" expanded="true" signature="7:111" ph="..." />
+            <marker date="1517688801617" expanded="true" signature="144:665" ph="{...}" />
+            <marker date="1517688801617" expanded="true" signature="157:663" ph="{...}" />
+            <marker date="1517688801617" expanded="true" signature="180:382" ph="{...}" />
+            <marker date="1517688801617" expanded="true" signature="430:653" ph="&lt;div/&gt;" />
+            <marker date="1517688801617" expanded="true" signature="545:640" ph="&lt;main/&gt;" />
+            <marker date="1517688801617" expanded="true" signature="690:717" ph="/*...*/" />
+            <marker date="1517688801617" expanded="true" signature="754:1041" ph="query...{&#10;    wordpressPage(slug: { eq: $slug }) {&#10;      id&#10;      wordpress_id&#10;      slug&#10;      title&#10;      template&#10;      content&#10;    }&#10;  }" />
+            <marker date="1517688801617" expanded="true" signature="760:773" ph="WordpressPage...WordpressPage" />
+            <marker date="1517688801617" expanded="true" signature="773:788" ph="(...)" />
+            <marker date="1517688801617" expanded="true" signature="781:787" ph="String...String" />
+            <marker date="1517688801617" expanded="true" signature="789:1041" ph="{...}" />
+            <marker date="1517688801617" expanded="true" signature="795:808" ph="wordpressPage...wordpressPage" />
+            <marker date="1517688801617" expanded="true" signature="795:917" ph="wordpressPage...{&#10;      id&#10;      wordpress_id&#10;      slug&#10;      title&#10;      template&#10;      content&#10;    }" />
+            <marker date="1517688801617" expanded="true" signature="808:829" ph="(...)" />
+            <marker date="1517688801617" expanded="true" signature="809:813" ph="slug...slug" />
+            <marker date="1517688801617" expanded="true" signature="809:828" ph="slug...{ eq: $slug }" />
+            <marker date="1517688801617" expanded="true" signature="815:828" ph="{...}" />
+            <marker date="1517688801617" expanded="true" signature="817:819" ph="eq...eq" />
+            <marker date="1517688801617" expanded="true" signature="830:917" ph="{...}" />
+            <marker date="1517688801617" expanded="true" signature="838:840" ph="id...id" />
+            <marker date="1517688801617" expanded="true" signature="847:859" ph="wordpress_id...wordpress_id" />
+            <marker date="1517688801617" expanded="true" signature="866:870" ph="slug...slug" />
+            <marker date="1517688801617" expanded="true" signature="877:882" ph="title...title" />
+            <marker date="1517688801617" expanded="true" signature="889:897" ph="template...template" />
+            <marker date="1517688801617" expanded="true" signature="904:911" ph="content...content" />
+            <marker date="1517688801617" expanded="true" signature="917:1041" ph="{...}" />
+            <marker date="1517688801617" expanded="true" signature="922:938" ph="allWordpressPage...allWordpressPage" />
+            <marker date="1517688801617" expanded="true" signature="922:1037" ph="allWordpressPage...{&#10;      edges {&#10;        node {&#10;          slug&#10;          title&#10;          id&#10;        }&#10;      }&#10;    }" />
+            <marker date="1517688801617" expanded="true" signature="939:1037" ph="{...}" />
+            <marker date="1517688801617" expanded="true" signature="947:952" ph="edges...edges" />
+            <marker date="1517688801617" expanded="true" signature="947:1031" ph="edges...{&#10;        node {&#10;          slug&#10;          title&#10;          id&#10;        }&#10;      }" />
+            <marker date="1517688801617" expanded="true" signature="953:1031" ph="{...}" />
+            <marker date="1517688801617" expanded="true" signature="963:967" ph="node...node" />
+            <marker date="1517688801617" expanded="true" signature="963:1023" ph="node...{&#10;          slug&#10;          title&#10;          id&#10;        }" />
+            <marker date="1517688801617" expanded="true" signature="968:1023" ph="{...}" />
+            <marker date="1517688801617" expanded="true" signature="980:984" ph="slug...slug" />
+            <marker date="1517688801617" expanded="true" signature="995:1000" ph="title...title" />
+            <marker date="1517688801617" expanded="true" signature="1011:1013" ph="id...id" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/todo.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="43" lean-forward="false" selection-start-line="0" selection-start-column="43" selection-end-line="0" selection-end-column="43" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/post.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding>
+            <marker date="1515021443758" expanded="true" signature="11:90" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/b16-tomorrow-dark.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1515021443757" expanded="false" signature="7:127" ph="..." />
+            <marker date="1515021443757" expanded="true" signature="185:1594" ph="{...}" />
+            <marker date="1515021443757" expanded="true" signature="205:1290" ph="{...}" />
+            <marker date="1515021443757" expanded="true" signature="239:309" ph="{...}" />
+            <marker date="1515021443757" expanded="true" signature="535:564" ph="{...}" />
+            <marker date="1515021443757" expanded="true" signature="599:628" ph="{...}" />
+            <marker date="1515021443757" expanded="true" signature="669:704" ph="{...}" />
+            <marker date="1515021443757" expanded="true" signature="740:770" ph="{...}" />
+            <marker date="1515021443757" expanded="true" signature="810:842" ph="{...}" />
+            <marker date="1515021443757" expanded="true" signature="882:1049" ph="{...}" />
+            <marker date="1515021443757" expanded="true" signature="1095:1268" ph="{...}" />
+            <marker date="1515021443757" expanded="true" signature="1302:1592" ph="{...}" />
+            <marker date="1515021443757" expanded="true" signature="1360:1581" ph="&lt;div/&gt;" />
+            <marker date="1515021443757" expanded="true" signature="1374:1547" ph="&lt;Helmet/&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Layout/Navigation/Navigation.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="81" column="28" lean-forward="false" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
+          <folding>
+            <marker date="1517687733724" expanded="true" signature="7:208" ph="..." />
+            <marker date="1517687733724" expanded="true" signature="248:1027" ph="{...}" />
+            <marker date="1517687733724" expanded="true" signature="269:521" ph="{...}" />
+            <marker date="1517687733724" expanded="true" signature="360:495" ph="{...}" />
+            <marker date="1517687733724" expanded="true" signature="383:488" ph="{&quot;name&quot;: page.node.title...}" />
+            <marker date="1517687733724" expanded="true" signature="534:1025" ph="{...}" />
+            <marker date="1517687733724" expanded="true" signature="595:1015" ph="&lt;NavigationContainer/&gt;" />
+            <marker date="1517687733724" expanded="true" signature="625:801" ph="&lt;TitleSection/&gt;" />
+            <marker date="1517687733724" expanded="true" signature="650:702" ph="&lt;Link/&gt;" />
+            <marker date="1517687733724" expanded="true" signature="713:777" ph="&lt;Link/&gt;" />
+            <marker date="1517687733724" expanded="true" signature="810:986" ph="&lt;NavList/&gt;" />
+            <marker date="1517687733724" expanded="true" signature="863:953" ph="&lt;li/&gt;" />
+            <marker date="1517687733724" expanded="true" signature="1068:1220" ph="{...}" />
+            <marker date="1517687733724" expanded="true" signature="1255:1391" ph="{...}" />
+            <marker date="1517687733724" expanded="true" signature="1325:1353" ph="{...}" />
+            <marker date="1517687733724" expanded="true" signature="1361:1390" ph="{...}" />
+            <marker date="1517687733724" expanded="true" signature="1420:1508" ph="{...}" />
+            <marker date="1517687733724" expanded="true" signature="1444:1472" ph="{...}" />
+            <marker date="1517687733724" expanded="true" signature="1481:1507" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="153" column="1" lean-forward="true" selection-start-line="153" selection-start-column="1" selection-end-line="153" selection-end-column="1" />
+          <folding>
+            <marker date="1517693333686" expanded="true" signature="491:752" ph="{...}" />
+            <marker date="1517693333686" expanded="true" signature="787:808" ph="{...}" />
+            <marker date="1517693333686" expanded="true" signature="833:876" ph="{...}" />
+            <marker date="1517693333686" expanded="true" signature="881:903" ph="{...}" />
+            <marker date="1517693333686" expanded="true" signature="908:930" ph="{...}" />
+            <marker date="1517693333686" expanded="true" signature="935:959" ph="{...}" />
+            <marker date="1517693333686" expanded="true" signature="964:988" ph="{...}" />
+            <marker date="1517693333686" expanded="true" signature="993:1015" ph="{...}" />
+            <marker date="1517693333686" expanded="true" signature="1020:1044" ph="{...}" />
+            <marker date="1517693333686" expanded="true" signature="1052:1116" ph="{...}" />
+            <marker date="1517693333686" expanded="true" signature="1121:1144" ph="{...}" />
+            <marker date="1517693333686" expanded="true" signature="1148:1262" ph="{...}" />
+            <marker date="1517693333686" expanded="true" signature="1272:1331" ph="{...}" />
+            <marker date="1517693333686" expanded="true" signature="1370:1664" ph="{...}" />
+            <marker date="1517693333686" expanded="true" signature="1407:1456" ph="{...}" />
+            <marker date="1517693333686" expanded="true" signature="1463:1489" ph="{...}" />
+            <marker date="1517693333686" expanded="true" signature="1496:1524" ph="{...}" />
+            <marker date="1517693333686" expanded="true" signature="1531:1559" ph="{...}" />
+            <marker date="1517693333686" expanded="true" signature="1566:1592" ph="{...}" />
+            <marker date="1517693333686" expanded="true" signature="1599:1627" ph="{...}" />
+            <marker date="1517693333686" expanded="true" signature="1634:1662" ph="{...}" />
+            <marker date="1517693333686" expanded="true" signature="1676:2251" ph="{...}" />
+            <marker date="1517693333686" expanded="true" signature="2257:2299" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Posts/PostTags/PostTags.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-194">
+          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding>
+            <marker date="1517693192606" expanded="true" signature="7:133" ph="..." />
+            <marker date="1517693192606" expanded="true" signature="168:806" ph="{...}" />
+            <marker date="1517693192606" expanded="true" signature="191:265" ph="{...}" />
+            <marker date="1517693192606" expanded="true" signature="283:427" ph="{...}" />
+            <marker date="1517693192606" expanded="true" signature="365:402" ph="{...}" />
+            <marker date="1517693192606" expanded="true" signature="440:804" ph="{...}" />
+            <marker date="1517693192606" expanded="true" signature="497:794" ph="&lt;PostTagsContainer/&gt;" />
+            <marker date="1517693192606" expanded="true" signature="574:753" ph="&lt;Link/&gt;" />
+            <marker date="1517693192606" expanded="true" signature="845:933" ph="{...}" />
+            <marker date="1517693192606" expanded="true" signature="882:932" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="60" selection-end-column="1" />
+          <folding>
+            <marker date="1517691563533" expanded="true" signature="7:334" ph="..." />
+            <marker date="1517691563533" expanded="true" signature="372:1231" ph="{...}" />
+            <marker date="1517691563533" expanded="true" signature="385:1229" ph="{...}" />
+            <marker date="1517691563533" expanded="true" signature="467:1219" ph="&lt;HomeContainer/&gt;" />
+            <marker date="1517691563533" expanded="true" signature="640:1196" ph="&lt;MainContentContainer/&gt;" />
+            <marker date="1517691563533" expanded="true" signature="716:1094" ph="&lt;p/&gt;" />
+            <marker date="1517691563533" expanded="true" signature="1318:1374" ph="{...}" />
+            <marker date="1517691563533" expanded="true" signature="1418:1637" ph="{...}" />
+            <marker date="1517691563533" expanded="true" signature="1421:1637" ph="{...}" />
+            <marker date="1517691563533" expanded="true" signature="1462:1538" ph="{...}" />
+            <marker date="1517691563533" expanded="true" signature="1544:1595" ph="{...}" />
+            <marker date="1517691563533" expanded="true" signature="1603:1636" ph="{...}" />
+            <marker date="1517691563533" expanded="true" signature="1640:1667" ph="/*...*/" />
+            <marker date="1517691563533" expanded="true" signature="1704:2430" ph="query...{&#10;    allWordpressPost(sort: { fields: [date], order: DESC }) {&#10;      edges {&#10;        node {&#10;          date&#10;          slug&#10;          title&#10;          id&#10;          categories {&#10;            name&#10;          }&#10;          tags {&#10;            name&#10;          }&#10;          content&#10;        }&#10;      }&#10;    }&#10;    allWordpressPage {&#10;      edges {&#10;        node {&#10;          slug&#10;          title&#10;          id&#10;        }&#10;      }&#10;    }&#10;  }" />
+            <marker date="1517691563533" expanded="true" signature="1710:1720" ph="IndexQuery...IndexQuery" />
+            <marker date="1517691563533" expanded="true" signature="1721:2430" ph="{...}" />
+            <marker date="1517691563533" expanded="true" signature="1722:1727" ph="allWordpressPost...{&#10;      edges {&#10;        node {&#10;          date&#10;          slug&#10;          title&#10;          modified&#10;          id&#10;          acf {&#10;            project&#10;            date&#10;          }&#10;          categories {&#10;            name&#10;          }&#10;          tags {&#10;            name&#10;          }&#10;          content&#10;        }&#10;      }&#10;    }" />
+            <marker date="1517691563533" expanded="true" signature="1727:1743" ph="allWordpressPost...allWordpressPost" />
+            <marker date="1517691563533" expanded="true" signature="1727:2306" ph="allWordpressPost...{&#10;      edges {&#10;        node {&#10;          featured_media {&#10;            source_url&#10;          }&#10;          author {&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }&#10;          date&#10;          slug&#10;          title&#10;          modified&#10;          excerpt&#10;          id&#10;          acf {&#10;            project&#10;            date&#10;          }&#10;          categories {&#10;            name&#10;          }&#10;          tags {&#10;            name&#10;          }&#10;          content&#10;        }&#10;      }&#10;    }" />
+            <marker date="1517691563533" expanded="true" signature="1744:2306" ph="{...}" />
+            <marker date="1517691563533" expanded="true" signature="1752:1757" ph="edges...edges" />
+            <marker date="1517691563533" expanded="true" signature="1752:2300" ph="edges...{&#10;        node {&#10;          featured_media {&#10;            source_url&#10;          }&#10;          author {&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }&#10;          date&#10;          slug&#10;          title&#10;          modified&#10;          excerpt&#10;          id&#10;          acf {&#10;            project&#10;            date&#10;          }&#10;          categories {&#10;            name&#10;          }&#10;          tags {&#10;            name&#10;          }&#10;          content&#10;        }&#10;      }" />
+            <marker date="1517691563533" expanded="true" signature="1758:2300" ph="{...}" />
+            <marker date="1517691563533" expanded="true" signature="1768:1772" ph="node...node" />
+            <marker date="1517691563533" expanded="true" signature="1768:2292" ph="node...{&#10;          featured_media {&#10;            source_url&#10;          }&#10;          author {&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }&#10;          date&#10;          slug&#10;          title&#10;          modified&#10;          excerpt&#10;          id&#10;          acf {&#10;            project&#10;            date&#10;          }&#10;          categories {&#10;            name&#10;          }&#10;          tags {&#10;            name&#10;          }&#10;          content&#10;        }" />
+            <marker date="1517691563533" expanded="true" signature="1773:2292" ph="{...}" />
+            <marker date="1517691563533" expanded="true" signature="1785:1799" ph="featured_media...featured_media" />
+            <marker date="1517691563533" expanded="true" signature="1785:1836" ph="featured_media...{&#10;            source_url&#10;          }" />
+            <marker date="1517691563533" expanded="true" signature="1800:1836" ph="{...}" />
+            <marker date="1517691563533" expanded="true" signature="1814:1824" ph="source_url...source_url" />
+            <marker date="1517691563533" expanded="true" signature="1847:1853" ph="author...author" />
+            <marker date="1517691563533" expanded="true" signature="1847:2005" ph="author...{&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }" />
+            <marker date="1517691563533" expanded="true" signature="1854:2005" ph="{...}" />
+            <marker date="1517691563533" expanded="true" signature="1868:1872" ph="name...name" />
+            <marker date="1517691563533" expanded="true" signature="1885:1896" ph="avatar_urls...avatar_urls" />
+            <marker date="1517691563533" expanded="true" signature="1885:1993" ph="avatar_urls...{&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }" />
+            <marker date="1517691563533" expanded="true" signature="1897:1993" ph="{...}" />
+            <marker date="1517691563533" expanded="true" signature="1913:1925" ph="wordpress_24...wordpress_24" />
+            <marker date="1517691563533" expanded="true" signature="1940:1952" ph="wordpress_48...wordpress_48" />
+            <marker date="1517691563533" expanded="true" signature="1967:1979" ph="wordpress_96...wordpress_96" />
+            <marker date="1517691563533" expanded="true" signature="2016:2020" ph="date...date" />
+            <marker date="1517691563533" expanded="true" signature="2031:2035" ph="slug...slug" />
+            <marker date="1517691563533" expanded="true" signature="2046:2051" ph="title...title" />
+            <marker date="1517691563533" expanded="true" signature="2062:2070" ph="modified...modified" />
+            <marker date="1517691563533" expanded="true" signature="2081:2088" ph="excerpt...excerpt" />
+            <marker date="1517691563533" expanded="true" signature="2099:2101" ph="id...id" />
+            <marker date="1517691563533" expanded="true" signature="2112:2115" ph="acf...acf" />
+            <marker date="1517691563533" expanded="true" signature="2112:2166" ph="acf...{&#10;            project&#10;            date&#10;          }" />
+            <marker date="1517691563533" expanded="true" signature="2116:2166" ph="{...}" />
+            <marker date="1517691563533" expanded="true" signature="2130:2137" ph="project...project" />
+            <marker date="1517691563533" expanded="true" signature="2150:2154" ph="date...date" />
+            <marker date="1517691563533" expanded="true" signature="2177:2187" ph="categories...categories" />
+            <marker date="1517691563533" expanded="true" signature="2177:2218" ph="categories...{&#10;            name&#10;          }" />
+            <marker date="1517691563533" expanded="true" signature="2188:2218" ph="{...}" />
+            <marker date="1517691563533" expanded="true" signature="2202:2206" ph="name...name" />
+            <marker date="1517691563533" expanded="true" signature="2229:2233" ph="tags...tags" />
+            <marker date="1517691563533" expanded="true" signature="2229:2264" ph="tags...{&#10;            name&#10;          }" />
+            <marker date="1517691563533" expanded="true" signature="2234:2264" ph="{...}" />
+            <marker date="1517691563533" expanded="true" signature="2248:2252" ph="name...name" />
+            <marker date="1517691563533" expanded="true" signature="2275:2282" ph="content...content" />
+            <marker date="1517691563533" expanded="true" signature="2311:2327" ph="allWordpressPage...allWordpressPage" />
+            <marker date="1517691563533" expanded="true" signature="2311:2426" ph="allWordpressPage...{&#10;      edges {&#10;        node {&#10;          slug&#10;          title&#10;          id&#10;        }&#10;      }&#10;    }" />
+            <marker date="1517691563533" expanded="true" signature="2328:2426" ph="{...}" />
+            <marker date="1517691563533" expanded="true" signature="2336:2341" ph="edges...edges" />
+            <marker date="1517691563533" expanded="true" signature="2336:2420" ph="edges...{&#10;        node {&#10;          slug&#10;          title&#10;          id&#10;        }&#10;      }" />
+            <marker date="1517691563533" expanded="true" signature="2342:2420" ph="{...}" />
+            <marker date="1517691563533" expanded="true" signature="2352:2356" ph="node...node" />
+            <marker date="1517691563533" expanded="true" signature="2352:2412" ph="node...{&#10;          slug&#10;          title&#10;          id&#10;        }" />
+            <marker date="1517691563533" expanded="true" signature="2357:2412" ph="{...}" />
+            <marker date="1517691563533" expanded="true" signature="2369:2373" ph="slug...slug" />
+            <marker date="1517691563533" expanded="true" signature="2384:2389" ph="title...title" />
+            <marker date="1517691563533" expanded="true" signature="2400:2402" ph="id...id" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/category.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="14" column="66" lean-forward="false" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
+          <folding>
+            <marker date="1517694443089" expanded="true" signature="7:282" ph="..." />
+            <marker date="1517694443089" expanded="true" signature="346:843" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="359:841" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="488:831" ph="&lt;div/&gt;" />
+            <marker date="1517694443089" expanded="true" signature="676:818" ph="&lt;MainContentContainer/&gt;" />
+            <marker date="1517694443089" expanded="true" signature="885:1104" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="929:1005" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1011:1062" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1070:1103" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1107:1134" ph="/*...*/" />
+            <marker date="1517694443089" expanded="true" signature="1171:1899" ph="query...{&#10;    allWordpressPost {&#10;      edges {&#10;        node {&#10;          featured_media {&#10;            source_url&#10;          }&#10;          author {&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }&#10;          date&#10;          slug&#10;          title&#10;          modified&#10;          excerpt&#10;          id&#10;          acf {&#10;            project&#10;            date&#10;          }&#10;          categories {&#10;            name&#10;          }&#10;          tags {&#10;            name&#10;          }&#10;          content&#10;        }&#10;      }&#10;    }&#10;    allWordpressPage {&#10;      edges {&#10;        node {&#10;          slug&#10;          title&#10;          id&#10;        }&#10;      }&#10;    }&#10;  }" />
+            <marker date="1517694443089" expanded="true" signature="1177:1189" ph="CategoryPage...CategoryPage" />
+            <marker date="1517694443089" expanded="true" signature="1190:1899" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1196:1212" ph="allWordpressPost...allWordpressPost" />
+            <marker date="1517694443089" expanded="true" signature="1196:1775" ph="allWordpressPost...{&#10;      edges {&#10;        node {&#10;          featured_media {&#10;            source_url&#10;          }&#10;          author {&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }&#10;          date&#10;          slug&#10;          title&#10;          modified&#10;          excerpt&#10;          id&#10;          acf {&#10;            project&#10;            date&#10;          }&#10;          categories {&#10;            name&#10;          }&#10;          tags {&#10;            name&#10;          }&#10;          content&#10;        }&#10;      }&#10;    }" />
+            <marker date="1517694443089" expanded="true" signature="1213:1775" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1221:1226" ph="edges...edges" />
+            <marker date="1517694443089" expanded="true" signature="1221:1769" ph="edges...{&#10;        node {&#10;          featured_media {&#10;            source_url&#10;          }&#10;          author {&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }&#10;          date&#10;          slug&#10;          title&#10;          modified&#10;          excerpt&#10;          id&#10;          acf {&#10;            project&#10;            date&#10;          }&#10;          categories {&#10;            name&#10;          }&#10;          tags {&#10;            name&#10;          }&#10;          content&#10;        }&#10;      }" />
+            <marker date="1517694443089" expanded="true" signature="1227:1769" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1237:1241" ph="node...node" />
+            <marker date="1517694443089" expanded="true" signature="1237:1761" ph="node...{&#10;          featured_media {&#10;            source_url&#10;          }&#10;          author {&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }&#10;          date&#10;          slug&#10;          title&#10;          modified&#10;          excerpt&#10;          id&#10;          acf {&#10;            project&#10;            date&#10;          }&#10;          categories {&#10;            name&#10;          }&#10;          tags {&#10;            name&#10;          }&#10;          content&#10;        }" />
+            <marker date="1517694443089" expanded="true" signature="1242:1761" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1254:1268" ph="featured_media...featured_media" />
+            <marker date="1517694443089" expanded="true" signature="1254:1305" ph="featured_media...{&#10;            source_url&#10;          }" />
+            <marker date="1517694443089" expanded="true" signature="1269:1305" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1283:1293" ph="source_url...source_url" />
+            <marker date="1517694443089" expanded="true" signature="1316:1322" ph="author...author" />
+            <marker date="1517694443089" expanded="true" signature="1316:1474" ph="author...{&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }" />
+            <marker date="1517694443089" expanded="true" signature="1323:1474" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1337:1341" ph="name...name" />
+            <marker date="1517694443089" expanded="true" signature="1354:1365" ph="avatar_urls...avatar_urls" />
+            <marker date="1517694443089" expanded="true" signature="1354:1462" ph="avatar_urls...{&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }" />
+            <marker date="1517694443089" expanded="true" signature="1366:1462" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1382:1394" ph="wordpress_24...wordpress_24" />
+            <marker date="1517694443089" expanded="true" signature="1409:1421" ph="wordpress_48...wordpress_48" />
+            <marker date="1517694443089" expanded="true" signature="1436:1448" ph="wordpress_96...wordpress_96" />
+            <marker date="1517694443089" expanded="true" signature="1485:1489" ph="date...date" />
+            <marker date="1517694443089" expanded="true" signature="1500:1504" ph="slug...slug" />
+            <marker date="1517694443089" expanded="true" signature="1515:1520" ph="title...title" />
+            <marker date="1517694443089" expanded="true" signature="1531:1539" ph="modified...modified" />
+            <marker date="1517694443089" expanded="true" signature="1550:1557" ph="excerpt...excerpt" />
+            <marker date="1517694443089" expanded="true" signature="1568:1570" ph="id...id" />
+            <marker date="1517694443089" expanded="true" signature="1581:1584" ph="acf...acf" />
+            <marker date="1517694443089" expanded="true" signature="1581:1635" ph="acf...{&#10;            project&#10;            date&#10;          }" />
+            <marker date="1517694443089" expanded="true" signature="1585:1635" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1599:1606" ph="project...project" />
+            <marker date="1517694443089" expanded="true" signature="1619:1623" ph="date...date" />
+            <marker date="1517694443089" expanded="true" signature="1646:1656" ph="categories...categories" />
+            <marker date="1517694443089" expanded="true" signature="1646:1687" ph="categories...{&#10;            name&#10;          }" />
+            <marker date="1517694443089" expanded="true" signature="1657:1687" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1671:1675" ph="name...name" />
+            <marker date="1517694443089" expanded="true" signature="1698:1702" ph="tags...tags" />
+            <marker date="1517694443089" expanded="true" signature="1698:1733" ph="tags...{&#10;            name&#10;          }" />
+            <marker date="1517694443089" expanded="true" signature="1703:1733" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1717:1721" ph="name...name" />
+            <marker date="1517694443089" expanded="true" signature="1744:1751" ph="content...content" />
+            <marker date="1517694443089" expanded="true" signature="1780:1796" ph="allWordpressPage...allWordpressPage" />
+            <marker date="1517694443089" expanded="true" signature="1780:1895" ph="allWordpressPage...{&#10;      edges {&#10;        node {&#10;          slug&#10;          title&#10;          id&#10;        }&#10;      }&#10;    }" />
+            <marker date="1517694443089" expanded="true" signature="1797:1895" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1805:1810" ph="edges...edges" />
+            <marker date="1517694443089" expanded="true" signature="1805:1889" ph="edges...{&#10;        node {&#10;          slug&#10;          title&#10;          id&#10;        }&#10;      }" />
+            <marker date="1517694443089" expanded="true" signature="1811:1889" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1821:1825" ph="node...node" />
+            <marker date="1517694443089" expanded="true" signature="1821:1881" ph="node...{&#10;          slug&#10;          title&#10;          id&#10;        }" />
+            <marker date="1517694443089" expanded="true" signature="1826:1881" ph="{...}" />
+            <marker date="1517694443089" expanded="true" signature="1838:1842" ph="slug...slug" />
+            <marker date="1517694443089" expanded="true" signature="1853:1858" ph="title...title" />
+            <marker date="1517694443089" expanded="true" signature="1869:1871" ph="id...id" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/tag.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding>
+            <marker date="1517694473317" expanded="true" signature="7:282" ph="..." />
+            <marker date="1517694473317" expanded="true" signature="341:829" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="354:827" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="478:817" ph="&lt;div/&gt;" />
+            <marker date="1517694473317" expanded="true" signature="661:804" ph="&lt;MainContentContainer/&gt;" />
+            <marker date="1517694473317" expanded="true" signature="872:1091" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="916:992" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="998:1049" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1057:1090" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1094:1121" ph="/*...*/" />
+            <marker date="1517694473317" expanded="true" signature="1158:1881" ph="query...{&#10;    allWordpressPost {&#10;      totalCount&#10;      edges {&#10;        node {&#10;          slug&#10;          title&#10;          tags {&#10;            name&#10;          }&#10;          date&#10;        }&#10;      }&#10;    }&#10;    allWordpressPage {&#10;      edges {&#10;        node {&#10;          slug&#10;          title&#10;          id&#10;        }&#10;      }&#10;    }&#10;  }" />
+            <marker date="1517694473317" expanded="true" signature="1164:1171" ph="TagPage...TagPage" />
+            <marker date="1517694473317" expanded="true" signature="1172:1881" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1178:1194" ph="allWordpressPost...allWordpressPost" />
+            <marker date="1517694473317" expanded="true" signature="1178:1757" ph="allWordpressPost...{&#10;      edges {&#10;        node {&#10;          featured_media {&#10;            source_url&#10;          }&#10;          author {&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }&#10;          date&#10;          slug&#10;          title&#10;          modified&#10;          excerpt&#10;          id&#10;          acf {&#10;            project&#10;            date&#10;          }&#10;          categories {&#10;            name&#10;          }&#10;          tags {&#10;            name&#10;          }&#10;          content&#10;        }&#10;      }&#10;    }" />
+            <marker date="1517694473317" expanded="true" signature="1195:1757" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1203:1208" ph="edges...edges" />
+            <marker date="1517694473317" expanded="true" signature="1203:1751" ph="edges...{&#10;        node {&#10;          featured_media {&#10;            source_url&#10;          }&#10;          author {&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }&#10;          date&#10;          slug&#10;          title&#10;          modified&#10;          excerpt&#10;          id&#10;          acf {&#10;            project&#10;            date&#10;          }&#10;          categories {&#10;            name&#10;          }&#10;          tags {&#10;            name&#10;          }&#10;          content&#10;        }&#10;      }" />
+            <marker date="1517694473317" expanded="true" signature="1209:1751" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1219:1223" ph="node...node" />
+            <marker date="1517694473317" expanded="true" signature="1219:1743" ph="node...{&#10;          featured_media {&#10;            source_url&#10;          }&#10;          author {&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }&#10;          date&#10;          slug&#10;          title&#10;          modified&#10;          excerpt&#10;          id&#10;          acf {&#10;            project&#10;            date&#10;          }&#10;          categories {&#10;            name&#10;          }&#10;          tags {&#10;            name&#10;          }&#10;          content&#10;        }" />
+            <marker date="1517694473317" expanded="true" signature="1224:1743" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1236:1250" ph="featured_media...featured_media" />
+            <marker date="1517694473317" expanded="true" signature="1236:1287" ph="featured_media...{&#10;            source_url&#10;          }" />
+            <marker date="1517694473317" expanded="true" signature="1251:1287" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1265:1275" ph="source_url...source_url" />
+            <marker date="1517694473317" expanded="true" signature="1298:1304" ph="author...author" />
+            <marker date="1517694473317" expanded="true" signature="1298:1456" ph="author...{&#10;            name&#10;            avatar_urls {&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }&#10;          }" />
+            <marker date="1517694473317" expanded="true" signature="1305:1456" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1319:1323" ph="name...name" />
+            <marker date="1517694473317" expanded="true" signature="1336:1347" ph="avatar_urls...avatar_urls" />
+            <marker date="1517694473317" expanded="true" signature="1336:1444" ph="avatar_urls...{&#10;              wordpress_24&#10;              wordpress_48&#10;              wordpress_96&#10;            }" />
+            <marker date="1517694473317" expanded="true" signature="1348:1444" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1364:1376" ph="wordpress_24...wordpress_24" />
+            <marker date="1517694473317" expanded="true" signature="1391:1403" ph="wordpress_48...wordpress_48" />
+            <marker date="1517694473317" expanded="true" signature="1418:1430" ph="wordpress_96...wordpress_96" />
+            <marker date="1517694473317" expanded="true" signature="1467:1471" ph="date...date" />
+            <marker date="1517694473317" expanded="true" signature="1482:1486" ph="slug...slug" />
+            <marker date="1517694473317" expanded="true" signature="1497:1502" ph="title...title" />
+            <marker date="1517694473317" expanded="true" signature="1513:1521" ph="modified...modified" />
+            <marker date="1517694473317" expanded="true" signature="1532:1539" ph="excerpt...excerpt" />
+            <marker date="1517694473317" expanded="true" signature="1550:1552" ph="id...id" />
+            <marker date="1517694473317" expanded="true" signature="1563:1566" ph="acf...acf" />
+            <marker date="1517694473317" expanded="true" signature="1563:1617" ph="acf...{&#10;            project&#10;            date&#10;          }" />
+            <marker date="1517694473317" expanded="true" signature="1567:1617" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1581:1588" ph="project...project" />
+            <marker date="1517694473317" expanded="true" signature="1601:1605" ph="date...date" />
+            <marker date="1517694473317" expanded="true" signature="1628:1638" ph="categories...categories" />
+            <marker date="1517694473317" expanded="true" signature="1628:1669" ph="categories...{&#10;            name&#10;          }" />
+            <marker date="1517694473317" expanded="true" signature="1639:1669" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1653:1657" ph="name...name" />
+            <marker date="1517694473317" expanded="true" signature="1680:1684" ph="tags...tags" />
+            <marker date="1517694473317" expanded="true" signature="1680:1715" ph="tags...{&#10;            name&#10;          }" />
+            <marker date="1517694473317" expanded="true" signature="1685:1715" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1699:1703" ph="name...name" />
+            <marker date="1517694473317" expanded="true" signature="1726:1733" ph="content...content" />
+            <marker date="1517694473317" expanded="true" signature="1762:1778" ph="allWordpressPage...allWordpressPage" />
+            <marker date="1517694473317" expanded="true" signature="1762:1877" ph="allWordpressPage...{&#10;      edges {&#10;        node {&#10;          slug&#10;          title&#10;          id&#10;        }&#10;      }&#10;    }" />
+            <marker date="1517694473317" expanded="true" signature="1779:1877" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1787:1792" ph="edges...edges" />
+            <marker date="1517694473317" expanded="true" signature="1787:1871" ph="edges...{&#10;        node {&#10;          slug&#10;          title&#10;          id&#10;        }&#10;      }" />
+            <marker date="1517694473317" expanded="true" signature="1793:1871" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1803:1807" ph="node...node" />
+            <marker date="1517694473317" expanded="true" signature="1803:1863" ph="node...{&#10;          slug&#10;          title&#10;          id&#10;        }" />
+            <marker date="1517694473317" expanded="true" signature="1808:1863" ph="{...}" />
+            <marker date="1517694473317" expanded="true" signature="1820:1824" ph="slug...slug" />
+            <marker date="1517694473317" expanded="true" signature="1835:1840" ph="title...title" />
+            <marker date="1517694473317" expanded="true" signature="1851:1853" ph="id...id" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Posts/PostListing/PostListing.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="40" column="18" lean-forward="true" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+          <folding>
+            <marker date="1517694137561" expanded="true" signature="7:95" ph="..." />
+            <marker date="1517694137561" expanded="true" signature="139:1661" ph="{...}" />
+            <marker date="1517694137561" expanded="true" signature="157:839" ph="{...}" />
+            <marker date="1517694137561" expanded="true" signature="228:814" ph="{...}" />
+            <marker date="1517694137561" expanded="true" signature="250:807" ph="{&quot;path&quot;: postEdge.node.slug...}" />
+            <marker date="1517694137561" expanded="true" signature="852:1659" ph="{...}" />
+            <marker date="1517694137561" expanded="true" signature="913:1649" ph="&lt;div/&gt;" />
+            <marker date="1517694137561" expanded="true" signature="928:954" ph="/*...*/" />
+            <marker date="1517694137561" expanded="true" signature="996:1624" ph="&lt;PostListContainer/&gt;" />
+            <marker date="1517694137561" expanded="true" signature="1028:1593" ph="&lt;Link/&gt;" />
+            <marker date="1517694137561" expanded="true" signature="1153:1292" ph="&lt;img/&gt;" />
+            <marker date="1517694137561" expanded="true" signature="1404:1500" ph="&lt;h5/&gt;" />
+            <marker date="1517694137561" expanded="true" signature="1700:2068" ph="{...}" />
+            <marker date="1517694137561" expanded="true" signature="1724:1753" ph="{...}" />
+            <marker date="1517694137561" expanded="true" signature="1766:1902" ph="{...}" />
+            <marker date="1517694137561" expanded="true" signature="1922:1987" ph="{...}" />
+            <marker date="1517694137561" expanded="true" signature="2006:2067" ph="{...}" />
+            <marker date="1517694137561" expanded="true" signature="2006:2068" ph="{...}" />
+            <marker date="1517694137561" expanded="true" signature="2067:2068" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/post.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="93" column="15" lean-forward="false" selection-start-line="93" selection-start-column="15" selection-end-line="93" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+            <marker date="1517694712627" expanded="true" signature="1821:1923" ph="..." />
+            <marker date="1517694712627" expanded="true" signature="1983:2064" ph="..." />
+            <marker date="1517694712627" expanded="true" signature="2230:2384" ph="{...}" />
+            <marker date="1517694712627" expanded="true" signature="2286:2383" ph="{...}" />
+            <marker date="1517694712627" expanded="true" signature="2286:2384" ph="{...}" />
+            <marker date="1517694712627" expanded="true" signature="2352:2379" ph="{...}" />
+            <marker date="1517694712627" expanded="true" signature="2414:2465" ph="{...}" />
+            <marker date="1517694712627" expanded="true" signature="2499:2671" ph="{...}" />
+            <marker date="1517694712627" expanded="true" signature="2569:2609" ph="{...}" />
+            <marker date="1517694712627" expanded="true" signature="2666:2670" ph="{...}" />
+            <marker date="1517694712627" expanded="true" signature="2666:2671" ph="{...}" />
+            <marker date="1517694712627" expanded="true" signature="2738:3331" ph="query...{&#10;    wordpressPost(id: { eq: $id }) {&#10;      title&#10;      slug&#10;      content&#10;      date&#10;      categories {&#10;        name&#10;      }&#10;      tags {&#10;        name&#10;      }&#10;    }&#10;  }" />
+            <marker date="1517694712627" expanded="true" signature="2744:2752" ph="PostById...PostById" />
+            <marker date="1517694712627" expanded="true" signature="2752:2766" ph="(...)" />
+            <marker date="1517694712627" expanded="true" signature="2758:2764" ph="String...String" />
+            <marker date="1517694712627" expanded="true" signature="2767:3331" ph="{...}" />
+            <marker date="1517694712627" expanded="true" signature="2773:2786" ph="wordpressPost...wordpressPost" />
+            <marker date="1517694712627" expanded="true" signature="2773:3207" ph="wordpressPost...{&#10;      title&#10;      slug&#10;      content&#10;      date&#10;      categories {&#10;        name&#10;      }&#10;      tags {&#10;        name&#10;      }&#10;    }" />
+            <marker date="1517694712627" expanded="true" signature="2786:2803" ph="(...)" />
+            <marker date="1517694712627" expanded="true" signature="2787:2789" ph="id...id" />
+            <marker date="1517694712627" expanded="true" signature="2787:2802" ph="id...{ eq: $id }" />
+            <marker date="1517694712627" expanded="true" signature="2791:2802" ph="{...}" />
+            <marker date="1517694712627" expanded="true" signature="2793:2795" ph="eq...eq" />
+            <marker date="1517694712627" expanded="true" signature="2804:3207" ph="{...}" />
+            <marker date="1517694712627" expanded="true" signature="2812:2826" ph="featured_media...featured_media" />
+            <marker date="1517694712627" expanded="true" signature="2812:2855" ph="featured_media...{&#10;        source_url&#10;      }" />
+            <marker date="1517694712627" expanded="true" signature="2827:2855" ph="{...}" />
+            <marker date="1517694712627" expanded="true" signature="2837:2847" ph="source_url...source_url" />
+            <marker date="1517694712627" expanded="true" signature="2862:2868" ph="author...author" />
+            <marker date="1517694712627" expanded="true" signature="2862:2992" ph="author...{&#10;        name&#10;        avatar_urls {&#10;          wordpress_24&#10;          wordpress_48&#10;          wordpress_96&#10;        }&#10;      }" />
+            <marker date="1517694712627" expanded="true" signature="2869:2992" ph="{...}" />
+            <marker date="1517694712627" expanded="true" signature="2879:2883" ph="name...name" />
+            <marker date="1517694712627" expanded="true" signature="2892:2903" ph="avatar_urls...avatar_urls" />
+            <marker date="1517694712627" expanded="true" signature="2892:2984" ph="avatar_urls...{&#10;          wordpress_24&#10;          wordpress_48&#10;          wordpress_96&#10;        }" />
+            <marker date="1517694712627" expanded="true" signature="2904:2984" ph="{...}" />
+            <marker date="1517694712627" expanded="true" signature="2916:2928" ph="wordpress_24...wordpress_24" />
+            <marker date="1517694712627" expanded="true" signature="2939:2951" ph="wordpress_48...wordpress_48" />
+            <marker date="1517694712627" expanded="true" signature="2962:2974" ph="wordpress_96...wordpress_96" />
+            <marker date="1517694712627" expanded="true" signature="2999:3003" ph="date...date" />
+            <marker date="1517694712627" expanded="true" signature="3010:3014" ph="slug...slug" />
+            <marker date="1517694712627" expanded="true" signature="3021:3026" ph="title...title" />
+            <marker date="1517694712627" expanded="true" signature="3033:3041" ph="modified...modified" />
+            <marker date="1517694712627" expanded="true" signature="3048:3055" ph="excerpt...excerpt" />
+            <marker date="1517694712627" expanded="true" signature="3062:3064" ph="id...id" />
+            <marker date="1517694712627" expanded="true" signature="3071:3074" ph="acf...acf" />
+            <marker date="1517694712627" expanded="true" signature="3071:3113" ph="acf...{&#10;        project&#10;        date&#10;      }" />
+            <marker date="1517694712627" expanded="true" signature="3075:3113" ph="{...}" />
+            <marker date="1517694712627" expanded="true" signature="3085:3092" ph="project...project" />
+            <marker date="1517694712627" expanded="true" signature="3101:3105" ph="date...date" />
+            <marker date="1517694712627" expanded="true" signature="3120:3130" ph="categories...categories" />
+            <marker date="1517694712627" expanded="true" signature="3120:3153" ph="categories...{&#10;        name&#10;      }" />
+            <marker date="1517694712627" expanded="true" signature="3131:3153" ph="{...}" />
+            <marker date="1517694712627" expanded="true" signature="3141:3145" ph="name...name" />
+            <marker date="1517694712627" expanded="true" signature="3160:3164" ph="tags...tags" />
+            <marker date="1517694712627" expanded="true" signature="3160:3187" ph="tags...{&#10;        name&#10;      }" />
+            <marker date="1517694712627" expanded="true" signature="3165:3187" ph="{...}" />
+            <marker date="1517694712627" expanded="true" signature="3175:3179" ph="name...name" />
+            <marker date="1517694712627" expanded="true" signature="3194:3201" ph="content...content" />
+            <marker date="1517694712627" expanded="true" signature="3212:3228" ph="allWordpressPage...allWordpressPage" />
+            <marker date="1517694712627" expanded="true" signature="3212:3327" ph="allWordpressPage...{&#10;      edges {&#10;        node {&#10;          slug&#10;          title&#10;          id&#10;        }&#10;      }&#10;    }" />
+            <marker date="1517694712627" expanded="true" signature="3229:3327" ph="{...}" />
+            <marker date="1517694712627" expanded="true" signature="3237:3242" ph="edges...edges" />
+            <marker date="1517694712627" expanded="true" signature="3237:3321" ph="edges...{&#10;        node {&#10;          slug&#10;          title&#10;          id&#10;        }&#10;      }" />
+            <marker date="1517694712627" expanded="true" signature="3243:3321" ph="{...}" />
+            <marker date="1517694712627" expanded="true" signature="3253:3257" ph="node...node" />
+            <marker date="1517694712627" expanded="true" signature="3253:3313" ph="node...{&#10;          slug&#10;          title&#10;          id&#10;        }" />
+            <marker date="1517694712627" expanded="true" signature="3258:3313" ph="{...}" />
+            <marker date="1517694712627" expanded="true" signature="3270:3274" ph="slug...slug" />
+            <marker date="1517694712627" expanded="true" signature="3285:3290" ph="title...title" />
+            <marker date="1517694712627" expanded="true" signature="3301:3303" ph="id...id" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
