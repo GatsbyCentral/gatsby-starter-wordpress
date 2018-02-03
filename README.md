@@ -85,6 +85,73 @@ A starter skeleton that leveraged the WordPress API for [Gatsby](https://github.
 
 ---
 
+### Instructions:
+
+Using this starter requires:
+
+* A Wordpress acct.
+* Configuring the gatsby-node file. You really only need to change BaseUrl, and hostingWPCOM if you're using WP.com rather than WP.org
+
+```javascript
+{
+  resolve: 'gatsby-source-wordpress',
+  options: {
+    // The base url to your WP site.
+    baseUrl: 'YOUR_WORDPRESS_URL',
+    // WP.com sites set to true, WP.org set to false
+    hostingWPCOM: false,
+    // The protocol. This can be http or https.
+    protocol: 'http',
+    // Use 'Advanced Custom Fields' Wordpress plugin
+    useACF: true,
+    auth: {},
+    // Set to true to debug endpoints on 'gatsby build'
+    verboseOutput: false
+  }
+},
+```
+
+* Update GraphQL queries to match your WordPress Content. This is the query currently on the index page. You either need to add ACF's in your WordPress to match the query (in this case Project and Date), or you need to remove those aspects of the query. The featured_media isn't a problem -- it'll work even if you have posts without featured images.
+
+```javascript
+allWordpressPost {
+      edges {
+        node {
+          featured_media {
+            source_url
+          }
+          author {
+            name
+            avatar_urls {
+              wordpress_24
+              wordpress_48
+              wordpress_96
+            }
+          }
+          date
+          slug
+          title
+          modified
+          excerpt
+          id
+          acf {
+            project
+            date
+          }
+          categories {
+            name
+          }
+          tags {
+            name
+          }
+          content
+        }
+      }
+    }
+```
+
+* Finally, you'll probably want to update the SiteConfig to match your info, becuase right now it has mine. 🤠
+
 ### Notes
 
 [Ruben Harutyunyan](https://github.com/Vagr9K) did most of the hard work with [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter).
