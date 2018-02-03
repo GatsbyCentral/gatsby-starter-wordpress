@@ -151,6 +151,9 @@ allWordpressPost {
 ```
 
 * Finally, you'll probably want to update the SiteConfig to match your info, becuase right now it has mine. 🤠
+* Suggestions:
+  * Use the Prism WP Plugin to pass code blocks down.
+  * If you give an ACF to a single post, you must give it to EVERY post, or GraphQL gets confused.
 
 ### Notes
 
