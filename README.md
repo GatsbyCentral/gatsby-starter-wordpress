@@ -12,10 +12,6 @@ A starter skeleton that leveraged the WordPress API for [Gatsby](https://github.
 
 ## Features
 
-<div align="center">
-    <img src="http://res.cloudinary.com/ericwindmill/image/upload/v1517695916/Screen_Shot_2018-02-03_at_2.09.53_PM_ja7idb.png" alt="Logo" width='800px' />
-</div>
-
 ### New Features
 
 * [WordPress plugin for Gatsby](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress)
@@ -76,12 +72,6 @@ A starter skeleton that leveraged the WordPress API for [Gatsby](https://github.
   * write-good for linting English prose
   * gh-pages for deploying to GitHub pages
   * CodeClimate configuration file and badge
-
----
-
-<div align="center">
-    <img src="http://res.cloudinary.com/ericwindmill/image/upload/v1517695916/Screen_Shot_2018-02-03_at_2.10.06_PM_lbntvz.png" alt="Logo" width='800px' />
-</div>
 
 ---
 
