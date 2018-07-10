@@ -80,7 +80,7 @@ A starter skeleton that leveraged the WordPress API for [Gatsby](https://github.
 Using this starter requires:
 
 * A Wordpress acct.
-* Configuring the gatsby-node file. You really only need to change BaseUrl, and hostingWPCOM if you're using WP.com rather than WP.org
+* Configuring the gatsby-config.js file. You really only need to change BaseUrl, and hostingWPCOM if you're using WP.com rather than WP.org
 
 ```javascript
 {
