@@ -126,6 +126,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         })
       })
     // === END TAGS ===
+    resolve()
   })
 }
 
