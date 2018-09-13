@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
+import kebabCase from "lodash/kebabCase";
 import UserInfo from '../components/Accessories/UserInfo/UserInfo'
 import Disqus from '../components/Accessories/Disqus/Disqus'
 import PostTags from '../components/Posts/PostTags/PostTags'
@@ -37,7 +38,7 @@ export default class PostTemplate extends React.Component {
                 {postNode.acf.date} in
                 <Link
                   className="cat-link"
-                  to={`catgory/${postNode.categories[0].name}`}
+                  to={`categories/${kebabCase(postNode.categories[0].name)}`}
                 >
                   {postNode.categories[0].name}{' '}
                 </Link>
