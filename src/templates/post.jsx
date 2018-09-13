@@ -48,7 +48,7 @@ export default class PostTemplate extends React.Component {
           <div dangerouslySetInnerHTML={{ __html: postNode.content }} />
           <div className="tags">
             <h4> More Like This: </h4>
-            <PostTags tags={postNode.tags} />
+            <PostTags tags={postNode.tags || []} />
           </div>
           <Divider />
           <div className="post-meta">
