@@ -6,6 +6,8 @@
 
 A starter skeleton that leveraged the WordPress API for [Gatsby](https://github.com/gatsbyjs/gatsby/).
 
+Created by [Eric Windmill](https://ericwindmill.com) and now maintained by [GatsbyCentral](https://www.gatsbycentral.com).
+
 #### This Project was forked from [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter)
 
 ### [Demo](https://gatsby-wordpress-starter.netlify.com/)
