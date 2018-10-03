@@ -57,9 +57,11 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                     modified
                     tags {
                       name
+                      slug
                     }
                     categories {
                       name
+                      slug
                     }
                   }
                 }
@@ -79,11 +81,11 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           // The Post ID is prefixed with 'POST_'
           _.each(result.data.allWordpressPost.edges, edge => {
             // grab all the tags and categories for later use
-            edge.node.tags.forEach(tag => {
-              tags.push(tag.name)
+            _.each(edge.node.tags, tag => {
+              tags.push(tag)
             })
-            edge.node.categories.forEach(category => {
-              categories.push(category.name)
+            _.each(edge.node.categories, category => {
+              categories.push(category)
             })
 
             createPage({
@@ -101,27 +103,29 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           const categoriesTemplate = path.resolve(
             `./src/templates/category.jsx`
           )
-          const tagsSet = new Set(tags)
-          const catSet = new Set(categories)
+          const tagsSet = _.uniqBy(tags, "slug");
+          const catSet = _.uniqBy(categories, "slug");
           tagsSet.forEach(tag => {
             createPage({
-              path: `/tags/${_.kebabCase(tag)}/`,
+              path: `/tags/${tag.slug}/`,
               component: slash(tagsTemplate),
               context: {
-                id: tag
+                name: tag.name,
+                slug: tag.slug
               }
-            })
-          })
+            });
+          });
 
           catSet.forEach(cat => {
             createPage({
-              path: `/categories/${_.kebabCase(cat)}/`,
+              path: `/categories/${cat.slug}/`,
               component: slash(categoriesTemplate),
               context: {
-                id: cat
+                name: cat.name,
+                slug: cat.slug
               }
-            })
-          })
+            });
+          });
           resolve()
         })
       })
