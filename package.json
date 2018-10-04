@@ -26,6 +26,7 @@
     "gatsby-source-filesystem": "^1.5.11",
     "gatsby-source-wordpress": "^2.0.42",
     "gatsby-transformer-remark": "^1.7.26",
+    "gatsby-transformer-sharp": "1.6.27",
     "lodash": "^4.17.4",
     "lodash-webpack-plugin": "^0.11.4",
     "react": "^15.6.1",
