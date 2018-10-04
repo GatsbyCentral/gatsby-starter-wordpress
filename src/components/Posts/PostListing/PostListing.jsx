@@ -9,6 +9,7 @@ class PostListing extends React.Component {
     const postList = [];
     this.props.postEdges.forEach(postEdge => {
       postList.push({
+        id: postEdge.node.id,
         path: postEdge.node.slug,
         cover: postEdge.node.cover,
         title: postEdge.node.title,
@@ -30,7 +31,7 @@ class PostListing extends React.Component {
       <div>
         {/* Your post list here. */
         postList.map(post => (
-          <PostListContainer key={post.path}>
+          <PostListContainer key={post.id}>
             <Link className="post-link" to={`/${post.path}`} key={post.title}>
               {post.featured_media ? (
                 <Img
