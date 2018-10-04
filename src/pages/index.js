@@ -29,7 +29,11 @@ export default class IndexPage extends React.Component {
                   <small>{post.date}</small>
                 </p>
                 <div>
-                  <div dangerouslySetInnerHTML={{ __html: post.excerpt }} />
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: post.excerpt.replace(/<p class="link-more.*/, ''),
+                    }}
+                  />
                   <Link className="button is-small" to={post.slug}>
                     Keep Reading →
                   </Link>
