@@ -6,6 +6,7 @@
   "dependencies": {
     "bulma": "^0.7.0",
     "gatsby": "^2.0.0",
+    "gatsby-plugin-lodash": "^3.0.1",
     "gatsby-plugin-netlify": "^2.0.0",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sass": "^2.0.1",
