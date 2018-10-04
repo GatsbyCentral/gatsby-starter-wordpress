@@ -1,4 +1,4 @@
-# Gatsby + Netlify CMS Starter
+# Gatsby v2 WordPress Starter
 
 **NOTE:** This is the Gatsby v2 WordPress starter. It is a work in progress.
 
