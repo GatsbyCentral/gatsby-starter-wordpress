@@ -5,7 +5,6 @@ import Layout from '../components/Layout'
 
 export default class IndexPage extends React.Component {
   render() {
-    debugger
     const { data } = this.props
     const { edges: posts } = data.allWordpressPost
 
@@ -23,20 +22,18 @@ export default class IndexPage extends React.Component {
                 key={post.id}
               >
                 <p>
-                  <Link className="has-text-primary" to={post.fields.slug}>
-                    {post.frontmatter.title}
+                  <Link className="has-text-primary" to={post.slug}>
+                    {post.title}
                   </Link>
                   <span> &bull; </span>
-                  <small>{post.frontmatter.date}</small>
+                  <small>{post.date}</small>
                 </p>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button is-small" to={post.fields.slug}>
+                <div>
+                  <div dangerouslySetInnerHTML={{ __html: post.excerpt }} />
+                  <Link className="button is-small" to={post.slug}>
                     Keep Reading →
                   </Link>
-                </p>
+                </div>
               </div>
             ))}
           </div>
