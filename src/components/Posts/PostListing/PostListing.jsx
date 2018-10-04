@@ -46,8 +46,8 @@ class PostListing extends React.Component {
               <h5>
                 {post.date} in {post.mainCategory} by {post.authorName}
               </h5>
-              <div dangerouslySetInnerHTML={{ __html: post.excerpt }} />
             </Link>
+            <div dangerouslySetInnerHTML={{ __html: post.excerpt }} />
           </PostListContainer>
         ))}
       </div>
