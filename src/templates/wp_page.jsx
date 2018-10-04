@@ -10,8 +10,6 @@ class wpPage extends Component {
       slug: this.props.data.wordpressPage.slug
     };
 
-    console.log(pageNode);
-
     return (
       <div>
         <TopNavigation pages={this.props.data.allWordpressPage} />
