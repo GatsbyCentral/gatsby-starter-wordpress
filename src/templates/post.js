@@ -9,6 +9,7 @@ export const BlogPostTemplate = ({
   categories,
   tags,
   title,
+  date,
   helmet,
 }) => {
   return (
@@ -21,32 +22,35 @@ export const BlogPostTemplate = ({
               {title}
             </h1>
             <div dangerouslySetInnerHTML={{ __html: content }} />
-            {categories && categories.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Categories</h4>
-                <ul className="taglist">
-                  {categories.map(category => (
-                    <li key={`${category}cat`}>
-                      <Link to={`/categories/${category.slug}/`}>
-                        {category.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map(tag => (
-                    <li key={`${tag}tag`}>
-                      <Link to={`/tags/${tag.slug}/`}>{tag.name}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
+            <div style={{ marginTop: `4rem` }}>
+              <p>{date}</p>
+              {categories && categories.length ? (
+                <div>
+                  <h4>Categories</h4>
+                  <ul className="taglist">
+                    {categories.map(category => (
+                      <li key={`${category}cat`}>
+                        <Link to={`/categories/${category.slug}/`}>
+                          {category.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
+              {tags && tags.length ? (
+                <div>
+                  <h4>Tags</h4>
+                  <ul className="taglist">
+                    {tags.map(tag => (
+                      <li key={`${tag}tag`}>
+                        <Link to={`/tags/${tag.slug}/`}>{tag.name}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
+            </div>
           </div>
         </div>
       </div>
@@ -71,6 +75,7 @@ const BlogPost = ({ data }) => {
         categories={post.categories}
         tags={post.tags}
         title={post.title}
+        date={post.date}
       />
     </Layout>
   )
@@ -98,6 +103,7 @@ export const pageQuery = graphql`
       title
       slug
       content
+      date(formatString: "MMMM DD, YYYY")
       categories {
         name
         slug
