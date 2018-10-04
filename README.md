@@ -51,45 +51,6 @@ Using this starter requires:
 },
 ```
 
-* Update GraphQL queries to match your WordPress Content. This is the query currently on the index page. You either need to add ACF's in your WordPress to match the query (in this case Project and Date), or you need to remove those aspects of the query. The featured_media isn't a problem -- it'll work even if you have posts without featured images.
-
-```javascript
-allWordpressPost {
-      edges {
-        node {
-          featured_media {
-            source_url
-          }
-          author {
-            name
-            avatar_urls {
-              wordpress_24
-              wordpress_48
-              wordpress_96
-            }
-          }
-          date
-          slug
-          title
-          modified
-          excerpt
-          id
-          acf {
-            project
-            date
-          }
-          categories {
-            name
-          }
-          tags {
-            name
-          }
-          content
-        }
-      }
-    }
-```
-
 * Finally, you'll probably want to update the SiteConfig to match your info, because right now it has mine. 🤠
 * Suggestions:
   * Use the Prism WP Plugin to pass code blocks down.
