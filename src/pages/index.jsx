@@ -17,12 +17,12 @@ class Index extends React.Component {
         <MainContentContainer>
           <h1>Gatsby + Wordpress Blog</h1>
           <p style={{ textAlign: "center" }}>
-            Created by Eric Windmill.{" "}
+            Maintained by Gatsby Central.{" "}
             <a
               style={{ fontSize: "1.6rem" }}
-              href="https://twitter.com/ericwindmill"
+              href="https://twitter.com/GatsbyCentral"
             >
-              You should follow him on Twitter
+              You could follow them on Twitter
             </a>
           </p>
           <Divider />
