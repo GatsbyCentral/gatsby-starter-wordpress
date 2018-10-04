@@ -4272,6 +4272,13 @@ gatsby-cli@^1.1.58:
     yargs "^11.1.0"
     yurnalist "^0.2.1"
 
+gatsby-image@1.0.55:
+  version "1.0.55"
+  resolved "https://registry.yarnpkg.com/gatsby-image/-/gatsby-image-1.0.55.tgz#716c7f44d9949864c55331bd3316b751c94ca0c8"
+  dependencies:
+    babel-runtime "^6.26.0"
+    prop-types "^15.6.0"
+
 gatsby-link@^1.6.32, gatsby-link@^1.6.46:
   version "1.6.46"
   resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-1.6.46.tgz#1f9f6bd7a4d448a856c2035e54f2263d7933f4fd"
@@ -8829,7 +8836,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.3.0, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.8, prop-types@^15.6.1, prop-types@^15.6.2:
+prop-types@^15.3.0, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.8, prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2:
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
   dependencies:
