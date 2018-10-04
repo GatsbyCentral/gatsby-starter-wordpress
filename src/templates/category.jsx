@@ -58,7 +58,7 @@ export const pageQuery = graphql`
               wordpress_96
             }
           }
-          date
+          date(formatString: "D MMM YYYY HH:mm")
           slug
           title
           modified
