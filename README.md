@@ -10,8 +10,6 @@ A starter skeleton that leveraged the WordPress API for [Gatsby](https://github.
 
 ## Features
 
-### New Features
-
 * [WordPress plugin for Gatsby](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress)
 * Configured to work with WordPress Advanced Custom Fields
 * Auto generated Navigation for your Wordpress Pages
@@ -24,7 +22,6 @@ Your WordPress site must meet the following requirements:
 
 * At least 1 post must have at least 1 tag
 * At least 1 post must have a featured image
-
 
 ---
 
