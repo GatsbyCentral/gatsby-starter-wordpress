@@ -65,10 +65,6 @@ export const pageQuery = graphql`
           modified
           excerpt
           id
-          acf {
-            project
-            date
-          }
           categories {
             name
           }

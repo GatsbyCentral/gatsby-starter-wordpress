@@ -35,7 +35,7 @@ export default class PostTemplate extends React.Component {
             <div className="info">
               <h4>by {postNode.author.name}</h4>
               <h5>
-                {postNode.acf.date} in
+                {postNode.date} in
                 <Link
                   className="cat-link"
                   to={`categories/${kebabCase(postNode.categories[0].name)}`}
@@ -117,10 +117,6 @@ export const pageQuery = graphql`
       modified
       excerpt
       id
-      acf {
-        project
-        date
-      }
       categories {
         name
       }
