@@ -97,33 +97,46 @@ const MetaSection = styled.div`
 `;
 
 /* eslint no-undef: "off"*/
+export const postFieldsFragment = graphql`
+  fragment WordPressPostFields on wordpress__POST {
+    featured_media {
+      localFile {
+        childImageSharp {
+          resolutions(width: 600, height: 200) {
+            ...GatsbyImageSharpResolutions
+          }
+        }
+      }
+    }
+    author {
+      name
+      avatar_urls {
+        wordpress_24
+        wordpress_48
+        wordpress_96
+      }
+    }
+    date(formatString: "D MMM YYYY HH:mm")
+    slug
+    title
+    modified
+    excerpt
+    id
+    categories {
+      name
+    }
+    tags {
+      name
+    }
+    content
+  }
+`;
+
+/* eslint no-undef: "off"*/
 export const pageQuery = graphql`
   query PostById($id: String!) {
     wordpressPost(id: { eq: $id }) {
-      featured_media {
-        source_url
-      }
-      author {
-        name
-        avatar_urls {
-          wordpress_24
-          wordpress_48
-          wordpress_96
-        }
-      }
-      date(formatString: "D MMM YYYY HH:mm")
-      slug
-      title
-      modified
-      excerpt
-      id
-      categories {
-        name
-      }
-      tags {
-        name
-      }
-      content
+      ...WordPressPostFields
     }
     allWordpressPage {
       edges {

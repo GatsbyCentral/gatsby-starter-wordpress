@@ -48,30 +48,7 @@ export const pageQuery = graphql`
     allWordpressPost(filter: { tags: { slug: { eq: $slug } } }) {
       edges {
         node {
-          featured_media {
-            source_url
-          }
-          author {
-            name
-            avatar_urls {
-              wordpress_24
-              wordpress_48
-              wordpress_96
-            }
-          }
-          date(formatString: "D MMM YYYY HH:mm")
-          slug
-          title
-          modified
-          excerpt
-          id
-          categories {
-            name
-          }
-          tags {
-            name
-          }
-          content
+          ...WordPressPostFields
         }
       }
     }

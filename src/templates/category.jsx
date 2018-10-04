@@ -48,7 +48,13 @@ export const pageQuery = graphql`
       edges {
         node {
           featured_media {
-            source_url
+            localFile {
+              childImageSharp {
+                resolutions(width: 600, height: 200) {
+                  ...GatsbyImageSharpResolutions
+                }
+              }
+            }
           }
           author {
             name

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Link from "gatsby-link";
+import Img from "gatsby-image";
 import "./PostListing.css";
 
 class PostListing extends React.Component {
@@ -15,10 +16,7 @@ class PostListing extends React.Component {
         excerpt: postEdge.node.excerpt,
         mainCategory: postEdge.node.categories[0].name,
         project: postEdge.node.project,
-        featuredImageUrl:
-          postEdge.node.featured_media !== null
-            ? postEdge.node.featured_media.source_url
-            : "",
+        featured_media: postEdge.node.featured_media,
         authorName: postEdge.node.author.name,
         authorAvatarUrl: postEdge.node.author.avatar_urls.wordpress_96
       });
@@ -34,11 +32,11 @@ class PostListing extends React.Component {
         postList.map(post => (
           <PostListContainer key={post.path}>
             <Link className="post-link" to={`/${post.path}`} key={post.title}>
-              {post.featuredImageUrl !== "" ? (
-                <img
-                  className="featured-image"
-                  src={post.featuredImageUrl}
-                  alt=""
+              {post.featured_media ? (
+                <Img
+                  resolutions={
+                    post.featured_media.localFile.childImageSharp.resolutions
+                  }
                 />
               ) : (
                 <div />
