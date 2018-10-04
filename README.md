@@ -2,6 +2,10 @@
     <img src="static/logos/logo-1024.png" alt="Logo" width='100px' height='100px'/>
 </div>
 
+# Gatsby v2
+
+This starter is for Gatsby v1, check out the [beta v2 starter](https://github.com/GatsbyCentral/gatsby-starter-wordpress/tree/v2).
+
 # Gatsby WordPress Starter
 
 A starter skeleton that leveraged the WordPress API for [Gatsby](https://github.com/gatsbyjs/gatsby/).
