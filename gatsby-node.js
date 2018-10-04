@@ -7,68 +7,120 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      allMarkdownRemark(limit: 1000) {
+      allWordpressPage {
         edges {
           node {
             id
-            fields {
-              slug
-            }
-            frontmatter {
-              tags
-              templateKey
-            }
+            slug
+            status
+            template
           }
         }
       }
     }
-  `).then(result => {
-    if (result.errors) {
-      result.errors.forEach(e => console.error(e.toString()))
-      return Promise.reject(result.errors)
-    }
-
-    const posts = result.data.allMarkdownRemark.edges
-
-    posts.forEach(edge => {
-      const id = edge.node.id
-      createPage({
-        path: edge.node.fields.slug,
-        tags: edge.node.frontmatter.tags,
-        component: path.resolve(
-          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
-        ),
-        // additional data can be passed via context
-        context: {
-          id,
-        },
-      })
-    })
-
-    // Tag pages:
-    let tags = []
-    // Iterate through each post, putting all found tags into `tags`
-    posts.forEach(edge => {
-      if (_.get(edge, `node.frontmatter.tags`)) {
-        tags = tags.concat(edge.node.frontmatter.tags)
+  `)
+    .then(result => {
+      if (result.errors) {
+        result.errors.forEach(e => console.error(e.toString()))
+        return Promise.reject(result.errors)
       }
-    })
-    // Eliminate duplicate tags
-    tags = _.uniq(tags)
 
-    // Make tag pages
-    tags.forEach(tag => {
-      const tagPath = `/tags/${_.kebabCase(tag)}/`
+      const pageTemplate = path.resolve(`./src/templates/page.js`)
 
-      createPage({
-        path: tagPath,
-        component: path.resolve(`src/templates/tags.js`),
-        context: {
-          tag,
-        },
+      _.each(result.data.allWordpressPage.edges, edge => {
+        createPage({
+          path: `/${edge.node.slug}/`,
+          component: pageTemplate,
+          context: {
+            id: edge.node.id,
+          },
+        })
       })
     })
-  })
+    .then(() => {
+      return graphql(`
+        {
+          allWordpressPost {
+            edges {
+              node {
+                id
+                slug
+                modified
+                tags {
+                  name
+                  slug
+                }
+                categories {
+                  name
+                  slug
+                }
+              }
+            }
+          }
+        }
+      `)
+    })
+    .then(result => {
+      if (result.errors) {
+        result.errors.forEach(e => console.error(e.toString()))
+        return Promise.reject(result.errors)
+      }
+
+      const postTemplate = path.resolve(`./src/templates/blog-post.js`)
+
+      // Build a list of categories and tags
+      const categories = []
+      const tags = []
+
+      // Iterate over the array of posts
+      _.each(result.data.allWordpressPost.edges, edge => {
+        // Add this post's categories and tags to the global list
+        _.each(edge.node.tags, tag => {
+          tags.push(tag)
+        })
+        _.each(edge.node.categories, category => {
+          categories.push(category)
+        })
+
+        // Create the Gatsby page for this WordPress post
+        createPage({
+          path: `/${edge.node.slug}/`,
+          component: postTemplate,
+          context: {
+            id: edge.node.id,
+          },
+        })
+      })
+
+      const tagsTemplate = path.resolve(`./src/templates/tag.js`)
+      const categoriesTemplate = path.resolve(`./src/templates/category.js`)
+
+      // Create a unique list of categories and tags
+      const uniqueCategories = _.uniqBy(categories, 'slug')
+      const uniqueTags = _.uniqBy(tags, 'slug')
+
+      // For each category and tag, create a Gatsby page
+      _.each(uniqueCategories, cat => {
+        createPage({
+          path: `/categories/${cat.slug}/`,
+          component: categoriesTemplate,
+          context: {
+            name: cat.name,
+            slug: cat.slug,
+          },
+        })
+      })
+      _.each(uniqueTags, tag => {
+        createPage({
+          path: `/tags/${tag.slug}/`,
+          component: tagsTemplate,
+          context: {
+            name: tag.name,
+            slug: tag.slug,
+          },
+        })
+      })
+    })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

@@ -13,6 +13,7 @@
     "gatsby-plugin-sharp": "^2.0.5",
     "gatsby-remark-images": "^2.0.1",
     "gatsby-source-filesystem": "^2.0.1",
+    "gatsby-source-wordpress": "^3.0.1",
     "gatsby-transformer-remark": "^2.1.1",
     "gatsby-transformer-sharp": "^2.1.1",
     "lodash": "^4.17.5",
