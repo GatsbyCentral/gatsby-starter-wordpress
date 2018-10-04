@@ -24,6 +24,7 @@ exports.createPages = ({ actions, graphql }) => {
         result.errors.forEach(e => console.error(e.toString()))
         return Promise.reject(result.errors)
       }
+      return
 
       const pageTemplate = path.resolve(`./src/templates/page.js`)
 
@@ -66,7 +67,7 @@ exports.createPages = ({ actions, graphql }) => {
         return Promise.reject(result.errors)
       }
 
-      const postTemplate = path.resolve(`./src/templates/blog-post.js`)
+      const postTemplate = path.resolve(`./src/templates/post.js`)
 
       // Build a list of categories and tags
       const categories = []
@@ -99,6 +100,7 @@ exports.createPages = ({ actions, graphql }) => {
       const uniqueCategories = _.uniqBy(categories, 'slug')
       const uniqueTags = _.uniqBy(tags, 'slug')
 
+      /*
       // For each category and tag, create a Gatsby page
       _.each(uniqueCategories, cat => {
         createPage({
@@ -120,6 +122,7 @@ exports.createPages = ({ actions, graphql }) => {
           },
         })
       })
+      */
     })
 }
 

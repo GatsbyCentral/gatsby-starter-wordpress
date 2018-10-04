@@ -46,27 +46,18 @@ class TagRoute extends React.Component {
 
 export default TagRoute
 
-export const tagPageQuery = graphql`
-  query TagPage($tag: String) {
+export const pageQuery = graphql`
+  query CategoryPage($slug: String!) {
     site {
       siteMetadata {
         title
       }
     }
-    allMarkdownRemark(
-      limit: 1000
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
-    ) {
+    allWordpressPost(filter: { categories: { slug: { eq: $slug } } }) {
       totalCount
       edges {
         node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-          }
+          ...PostFields
         }
       }
     }

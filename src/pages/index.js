@@ -5,8 +5,9 @@ import Layout from '../components/Layout'
 
 export default class IndexPage extends React.Component {
   render() {
+    debugger
     const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+    const { edges: posts } = data.allWordpressPost
 
     return (
       <Layout>
@@ -47,7 +48,7 @@ export default class IndexPage extends React.Component {
 
 IndexPage.propTypes = {
   data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
+    allWordpressPost: PropTypes.shape({
       edges: PropTypes.array,
     }),
   }),
@@ -55,22 +56,20 @@ IndexPage.propTypes = {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
-    ) {
+    allWordpressPost(sort: { fields: date, order: DESC }) {
       edges {
         node {
-          excerpt(pruneLength: 400)
           id
-          fields {
-            slug
+          title
+          excerpt
+          author {
+            name
+            avatar_urls {
+              wordpress_48
+            }
           }
-          frontmatter {
-            title
-            templateKey
-            date(formatString: "MMMM DD, YYYY")
-          }
+          date(formatString: "MMMM DD, YYYY")
+          slug
         }
       }
     }
