@@ -24,7 +24,8 @@ class Footer extends Component {
             Based on{" "}
             <a href="https://github.com/Vagr9K/gatsby-advanced-starter">
               Gatsby Advanced Starter
-            </a>.
+            </a>
+            .
           </h4>
         </div>
       </footer>

@@ -1,6 +1,6 @@
-const config = require('./data/SiteConfig')
+const config = require("./data/SiteConfig");
 
-const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
+const pathPrefix = config.pathPrefix === "/" ? "" : config.pathPrefix;
 
 module.exports = {
   pathPrefix: config.pathPrefix,
@@ -17,17 +17,17 @@ module.exports = {
     }
   },
   plugins: [
-    'gatsby-plugin-styled-components',
-    'gatsby-plugin-react-helmet',
+    "gatsby-plugin-styled-components",
+    "gatsby-plugin-react-helmet",
     {
-      resolve: 'gatsby-source-wordpress',
+      resolve: "gatsby-source-wordpress",
       options: {
         // The base url to your WP site.
-        baseUrl: 'ericwindmill.host',
+        baseUrl: "ericwindmill.host",
         // WP.com sites set to true, WP.org set to false
         hostingWPCOM: false,
         // The protocol. This can be http or https.
-        protocol: 'http',
+        protocol: "http",
         // Use 'Advanced Custom Fields' Wordpress plugin
         useACF: true,
         auth: {},
@@ -36,17 +36,17 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-nprogress',
+      resolve: "gatsby-plugin-nprogress",
       options: {
         color: config.themeColor
       }
     },
-    'gatsby-plugin-sharp',
-    'gatsby-plugin-catch-links',
-    'gatsby-plugin-twitter',
-    'gatsby-plugin-sitemap',
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-catch-links",
+    "gatsby-plugin-twitter",
+    "gatsby-plugin-sitemap",
     {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: "gatsby-plugin-manifest",
       options: {
         name: config.siteTitle,
         short_name: config.siteTitle,
@@ -54,21 +54,21 @@ module.exports = {
         start_url: config.pathPrefix,
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
-        display: 'minimal-ui',
+        display: "minimal-ui",
         icons: [
           {
-            src: '/logos/logo-192x192.png',
-            sizes: '192x192',
-            type: 'image/png'
+            src: "/logos/logo-192x192.png",
+            sizes: "192x192",
+            type: "image/png"
           },
           {
-            src: '/logos/logo-512x512.png',
-            sizes: '512x512',
-            type: 'image/png'
+            src: "/logos/logo-512x512.png",
+            sizes: "512x512",
+            type: "image/png"
           }
         ]
       }
     },
-    'gatsby-plugin-offline'
+    "gatsby-plugin-offline"
   ]
-}
+};

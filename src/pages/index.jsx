@@ -1,14 +1,14 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import styled from 'styled-components'
-import PostListing from '../components/Posts/PostListing/PostListing'
-import SEO from '../components/Accessories/SEO/SEO'
-import config from '../../data/SiteConfig'
-import TopNavigation from '../components/Layout/Navigation/Navigation'
+import React from "react";
+import Helmet from "react-helmet";
+import styled from "styled-components";
+import PostListing from "../components/Posts/PostListing/PostListing";
+import SEO from "../components/Accessories/SEO/SEO";
+import config from "../../data/SiteConfig";
+import TopNavigation from "../components/Layout/Navigation/Navigation";
 
 class Index extends React.Component {
   render() {
-    const postEdges = this.props.data.allWordpressPost.edges
+    const postEdges = this.props.data.allWordpressPost.edges;
     return (
       <HomeContainer>
         <Helmet title={config.siteTitle} />
@@ -16,10 +16,10 @@ class Index extends React.Component {
         <TopNavigation pages={this.props.data.allWordpressPage} />
         <MainContentContainer>
           <h1>Gatsby + Wordpress Blog</h1>
-          <p style={{ textAlign: 'center' }}>
-            Created by Eric Windmill.{' '}
+          <p style={{ textAlign: "center" }}>
+            Created by Eric Windmill.{" "}
             <a
-              style={{ fontSize: '1.6rem' }}
+              style={{ fontSize: "1.6rem" }}
               href="https://twitter.com/ericwindmill"
             >
               You should follow him on Twitter
@@ -29,18 +29,18 @@ class Index extends React.Component {
           <PostListing postEdges={postEdges} />
         </MainContentContainer>
       </HomeContainer>
-    )
+    );
   }
 }
 
-export default Index
+export default Index;
 
-const HomeContainer = styled.div``
+const HomeContainer = styled.div``;
 
 const Divider = styled.div`
   margin: 50px 0;
   border-bottom: 1px solid darkgray;
-`
+`;
 
 const MainContentContainer = styled.main`
   width: 600px;
@@ -60,7 +60,7 @@ const MainContentContainer = styled.main`
   pre {
     background-color: grey;
   }
-`
+`;
 
 /* eslint no-undef: "off"*/
 export const pageQuery = graphql`
@@ -109,4 +109,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

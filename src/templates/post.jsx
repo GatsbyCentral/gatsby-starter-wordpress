@@ -1,25 +1,25 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import styled from 'styled-components'
-import Link from 'gatsby-link'
+import React from "react";
+import Helmet from "react-helmet";
+import styled from "styled-components";
+import Link from "gatsby-link";
 import kebabCase from "lodash/kebabCase";
-import UserInfo from '../components/Accessories/UserInfo/UserInfo'
-import Disqus from '../components/Accessories/Disqus/Disqus'
-import PostTags from '../components/Posts/PostTags/PostTags'
-import SocialLinks from '../components/Accessories/SocialLinks/SocialLinks'
-import SEO from '../components/Accessories/SEO/SEO'
-import config from '../../data/SiteConfig'
-import TopNavigation from '../components/Layout/Navigation/Navigation'
+import UserInfo from "../components/Accessories/UserInfo/UserInfo";
+import Disqus from "../components/Accessories/Disqus/Disqus";
+import PostTags from "../components/Posts/PostTags/PostTags";
+import SocialLinks from "../components/Accessories/SocialLinks/SocialLinks";
+import SEO from "../components/Accessories/SEO/SEO";
+import config from "../../data/SiteConfig";
+import TopNavigation from "../components/Layout/Navigation/Navigation";
 
 export default class PostTemplate extends React.Component {
   render() {
-    const { slug } = this.props.pathContext
-    const postNode = this.props.data.wordpressPost
+    const { slug } = this.props.pathContext;
+    const postNode = this.props.data.wordpressPost;
     if (!postNode.id) {
-      postNode.id = slug
+      postNode.id = slug;
     }
     if (!postNode.category_id) {
-      postNode.category_id = config.postDefaultCategoryID
+      postNode.category_id = config.postDefaultCategoryID;
     }
     return (
       <div>
@@ -40,7 +40,7 @@ export default class PostTemplate extends React.Component {
                   className="cat-link"
                   to={`categories/${kebabCase(postNode.categories[0].name)}`}
                 >
-                  {postNode.categories[0].name}{' '}
+                  {postNode.categories[0].name}{" "}
                 </Link>
               </h5>
             </div>
@@ -59,7 +59,7 @@ export default class PostTemplate extends React.Component {
           <Disqus postNode={postNode} />
         </PostContainer>
       </div>
-    )
+    );
   }
 }
 
@@ -75,12 +75,12 @@ const PostContainer = styled.div`
       width: 200px;
     }
   }
-`
+`;
 
 const Divider = styled.div`
   border-bottom: 1px solid black;
   margin: 30px;
-`
+`;
 
 const MetaSection = styled.div`
   display: flex;
@@ -94,7 +94,7 @@ const MetaSection = styled.div`
     font-size: 2rem;
     margin-left: 2px;
   }
-`
+`;
 
 /* eslint no-undef: "off"*/
 export const pageQuery = graphql`
@@ -139,4 +139,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

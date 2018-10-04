@@ -1,10 +1,10 @@
-import React from 'react'
-import styled from 'styled-components'
-import Link from 'gatsby-link'
+import React from "react";
+import styled from "styled-components";
+import Link from "gatsby-link";
 
 class PostListing extends React.Component {
   getPostList() {
-    const postList = []
+    const postList = [];
     this.props.postEdges.forEach(postEdge => {
       postList.push({
         path: postEdge.node.slug,
@@ -17,23 +17,23 @@ class PostListing extends React.Component {
         featuredImageUrl:
           postEdge.node.featured_media !== null
             ? postEdge.node.featured_media.source_url
-            : '',
+            : "",
         authorName: postEdge.node.author.name,
         authorAvatarUrl: postEdge.node.author.avatar_urls.wordpress_96
-      })
-    })
-    return postList
+      });
+    });
+    return postList;
   }
 
   render() {
-    const postList = this.getPostList()
+    const postList = this.getPostList();
     return (
       <div>
         {/* Your post list here. */
         postList.map(post => (
           <PostListContainer>
             <Link className="post-link" to={`/${post.path}`} key={post.title}>
-              {post.featuredImageUrl !== '' ? (
+              {post.featuredImageUrl !== "" ? (
                 <img
                   className="featured-image"
                   src={post.featuredImageUrl}
@@ -51,7 +51,7 @@ class PostListing extends React.Component {
           </PostListContainer>
         ))}
       </div>
-    )
+    );
   }
 }
 
@@ -61,7 +61,7 @@ const PostListContainer = styled.div`
     position: relative;
   }
   h3:before {
-    content: '';
+    content: "";
     width: 50px;
     background-color: #9d7cbf;
     height: 6px;
@@ -80,6 +80,6 @@ const PostListContainer = styled.div`
     background: none !important;
     padding: 0 !important;
   }
-`
+`;
 
-export default PostListing
+export default PostListing;

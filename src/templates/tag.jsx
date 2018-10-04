@@ -1,14 +1,14 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import config from '../../data/SiteConfig'
-import styled from 'styled-components'
-import TopNavigation from '../components/Layout/Navigation/Navigation'
-import PostListing from '../components/Posts/PostListing/PostListing'
+import React from "react";
+import Helmet from "react-helmet";
+import config from "../../data/SiteConfig";
+import styled from "styled-components";
+import TopNavigation from "../components/Layout/Navigation/Navigation";
+import PostListing from "../components/Posts/PostListing/PostListing";
 
 export default class TagTemplate extends React.Component {
   render() {
-    const tag = this.props.pathContext.name
-    const postEdges = this.props.data.allWordpressPost.edges
+    const tag = this.props.pathContext.name;
+    const postEdges = this.props.data.allWordpressPost.edges;
     return (
       <div className="tag-container">
         <Helmet title={`Posts tagged as "${tag}" | ${config.siteTitle}`} />
@@ -18,7 +18,7 @@ export default class TagTemplate extends React.Component {
           <PostListing postEdges={postEdges} />
         </MainContentContainer>
       </div>
-    )
+    );
   }
 }
 
@@ -40,7 +40,7 @@ const MainContentContainer = styled.main`
   pre {
     background-color: grey;
   }
-`
+`;
 
 /* eslint no-undef: "off"*/
 export const pageQuery = graphql`
@@ -89,4 +89,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

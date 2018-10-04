@@ -1,40 +1,40 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
-import _ from 'lodash'
-import Link from 'gatsby-link'
+import React, { Component } from "react";
+import styled from "styled-components";
+import _ from "lodash";
+import Link from "gatsby-link";
 
 class PostTags extends Component {
   constructor(props) {
-    super(props)
+    super(props);
 
-    this.getTagNames = this.getTagNames.bind(this)
+    this.getTagNames = this.getTagNames.bind(this);
   }
 
   getTagNames() {
-    const tagNames = []
-    const { tags } = this.props
+    const tagNames = [];
+    const { tags } = this.props;
     tags.forEach(tag => {
-      tagNames.push(tag.name)
-    })
-    return tagNames
+      tagNames.push(tag.name);
+    });
+    return tagNames;
   }
 
   render() {
-    const tags = this.getTagNames()
+    const tags = this.getTagNames();
     return (
       <PostTagsContainer>
         {tags &&
           tags.map(tag => (
             <Link
               key={tag}
-              style={{ textDecoration: 'none' }}
+              style={{ textDecoration: "none" }}
               to={`/tags/${_.kebabCase(tag)}`}
             >
               {tag}
             </Link>
           ))}
       </PostTagsContainer>
-    )
+    );
   }
 }
 
@@ -45,6 +45,6 @@ const PostTagsContainer = styled.div`
     font-size: 2rem;
     margin: 0 20px 0 0;
   }
-`
+`;
 
-export default PostTags
+export default PostTags;

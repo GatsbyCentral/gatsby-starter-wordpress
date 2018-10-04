@@ -54,10 +54,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                   format
                   tags {
                     name
-                   }
+                  }
                   categories {
                     name
-                   }
+                  }
                 }
               }
             }
@@ -75,11 +75,10 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
         // Build the nodes from the GraphQL queries
         result.data.allWordpressPost.edges.forEach(edge => {
-
           // Add the tags to the Tag Set
           if (edge.node.tags) {
             edge.node.tags.forEach(tag => {
-              tagSet.add(tag.name)
+              tagSet.add(tag.name);
             });
           }
 
@@ -87,7 +86,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           if (edge.node.categories) {
             edge.node.categories.forEach(category =>
               categorySet.add(category.name)
-            )
+            );
           }
 
           // Create Page is part of the Gatsby API

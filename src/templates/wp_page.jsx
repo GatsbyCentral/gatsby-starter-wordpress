@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import TopNavigation from '../components/Layout/Navigation/Navigation'
+import React, { Component } from "react";
+import TopNavigation from "../components/Layout/Navigation/Navigation";
 
 class wpPage extends Component {
   render() {
@@ -8,9 +8,9 @@ class wpPage extends Component {
       content: this.props.data.wordpressPage.content,
       id: this.props.data.wordpressPage.id,
       slug: this.props.data.wordpressPage.slug
-    }
+    };
 
-    console.log(pageNode)
+    console.log(pageNode);
 
     return (
       <div>
@@ -20,11 +20,11 @@ class wpPage extends Component {
           <div dangerouslySetInnerHTML={{ __html: pageNode.content }} />
         </main>
       </div>
-    )
+    );
   }
 }
 
-export default wpPage
+export default wpPage;
 
 /* eslint no-undef: "off"*/
 export const pageQuery = graphql`
@@ -47,4 +47,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
