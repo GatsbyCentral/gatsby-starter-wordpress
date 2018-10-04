@@ -1,21 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
 
-export const BlogPostTemplate = ({
-  content,
-  contentComponent,
-  description,
-  tags,
-  title,
-  helmet,
-}) => {
-  const PostContent = contentComponent || Content
-
+export const BlogPostTemplate = ({ content, tags, title, helmet }) => {
   return (
     <section className="section">
       {helmet || ''}
@@ -25,15 +14,14 @@ export const BlogPostTemplate = ({
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
-            <p>{description}</p>
-            <PostContent content={content} />
+            <div dangerouslySetInnerHTML={{ __html: content }} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
                 <ul className="taglist">
                   {tags.map(tag => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                    <li key={`${tag}tag`}>
+                      <Link to={`/tags/${tag.slug}/`}>{tag.name}</Link>
                     </li>
                   ))}
                 </ul>
@@ -48,24 +36,21 @@ export const BlogPostTemplate = ({
 
 BlogPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
-  contentComponent: PropTypes.func,
-  description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.instanceOf(Helmet),
 }
 
 const BlogPost = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { wordpressPost: post } = data
 
   return (
     <Layout>
       <BlogPostTemplate
-        content={post.html}
-        contentComponent={HTMLContent}
-        description={post.frontmatter.description}
-        helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
-        tags={post.frontmatter.tags}
-        title={post.frontmatter.title}
+        content={post.content}
+        helmet={<Helmet title={`${post.title} | Blog`} />}
+        categories={post.categories}
+        tags={post.tags}
+        title={post.title}
       />
     </Layout>
   )
@@ -88,7 +73,18 @@ export const pageQuery = graphql`
   }
   query BlogPostByID($id: String!) {
     wordpressPost(id: { eq: $id }) {
-      ...PostFields
+      id
+      title
+      slug
+      content
+      categories {
+        name
+        slug
+      }
+      tags {
+        name
+        slug
+      }
     }
   }
 `
