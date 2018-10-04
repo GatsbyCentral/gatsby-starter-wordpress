@@ -4,9 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const PageTemplate = ({ title, content, contentComponent }) => {
-  const PageContent = contentComponent || Content
-
+export const PageTemplate = ({ title, content }) => {
   return (
     <section className="section section--gradient">
       <div className="container">
@@ -16,7 +14,10 @@ export const PageTemplate = ({ title, content, contentComponent }) => {
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
-              <PageContent className="content" content={content} />
+              <div
+                className="content"
+                dangerouslySetInnerHTML={{ __html: content }}
+              />
             </div>
           </div>
         </div>
@@ -28,19 +29,14 @@ export const PageTemplate = ({ title, content, contentComponent }) => {
 PageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
-  contentComponent: PropTypes.func,
 }
 
 const Page = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { wordpressPage: page } = data
 
   return (
     <Layout>
-      <PageTemplate
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        content={post.html}
-      />
+      <PageTemplate title={page.title} content={page.content} />
     </Layout>
   )
 }
@@ -52,7 +48,7 @@ Page.propTypes = {
 export default Page
 
 export const pageQuery = graphql`
-  query Page($id: String!) {
+  query PageById($id: String!) {
     wordpressPage(id: { eq: $id }) {
       title
       content
