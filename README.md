@@ -6,7 +6,7 @@
 
 A starter skeleton that leveraged the WordPress API for [Gatsby](https://github.com/gatsbyjs/gatsby/).
 
-### [Demo](https://gatsby-wordpress-starter.netlify.com/)
+### [Demo](https://gatsby-starter-wordpress.netlify.com/)
 
 ## Features
 
