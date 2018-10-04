@@ -4,7 +4,13 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 
-export const BlogPostTemplate = ({ content, tags, title, helmet }) => {
+export const BlogPostTemplate = ({
+  content,
+  categories,
+  tags,
+  title,
+  helmet,
+}) => {
   return (
     <section className="section">
       {helmet || ''}
@@ -15,6 +21,20 @@ export const BlogPostTemplate = ({ content, tags, title, helmet }) => {
               {title}
             </h1>
             <div dangerouslySetInnerHTML={{ __html: content }} />
+            {categories && categories.length ? (
+              <div style={{ marginTop: `4rem` }}>
+                <h4>Categories</h4>
+                <ul className="taglist">
+                  {categories.map(category => (
+                    <li key={`${category}cat`}>
+                      <Link to={`/categories/${category.slug}/`}>
+                        {category.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
