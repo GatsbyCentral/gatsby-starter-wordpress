@@ -7,3 +7,7 @@ This starter is forked from the
 and modified to use WordPress instead of netlify-cms.
 
 Demo: https://gatsby-v2-starter-wordpress.netlify.com/
+
+## Use it now
+
+    gatsby new name https://github.com/GatsbyCentral/gatsby-starter-wordpress#v2
