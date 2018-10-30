@@ -17,3 +17,11 @@ Demo: https://gatsby-v2-starter-wordpress.netlify.com/
   - Make sure at least 1 post has at least 1 tag
 * Rejoice
   - File any [issues here](https://github.com/GatsbyCentral/gatsby-starter-wordpress/issues)
+
+## Contributors
+
+This starter was forked from the netlify starter by the
+[GatsbyCentral](https://www.gatsbycentral.com/) crew. Additional contributions
+were gratefully received from the following folks:
+
+* https://github.com/tomByrer
