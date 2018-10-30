@@ -1,4 +1,3 @@
-const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
@@ -27,12 +26,12 @@ exports.createPages = ({ actions, graphql }) => {
 
       const pageTemplate = path.resolve(`./src/templates/page.js`)
 
-      _.each(result.data.allWordpressPage.edges, edge => {
+      result.data.allWordpressPage.edges.forEach(({ node }) => {
         createPage({
-          path: `/${edge.node.slug}/`,
+          path: `/${node.slug}/`,
           component: pageTemplate,
           context: {
-            id: edge.node.id,
+            id: node.id,
           },
         })
       })
@@ -60,13 +59,13 @@ exports.createPages = ({ actions, graphql }) => {
       const postTemplate = path.resolve(`./src/templates/post.js`)
 
       // Iterate over the array of posts
-      _.each(result.data.allWordpressPost.edges, edge => {
+      result.data.allWordpressPost.edges.forEach(({ node }) => {
         // Create the Gatsby page for this WordPress post
         createPage({
-          path: `/${edge.node.slug}/`,
+          path: `/${node.slug}/`,
           component: postTemplate,
           context: {
-            id: edge.node.id,
+            id: node.id,
           },
         })
       })
@@ -94,13 +93,13 @@ exports.createPages = ({ actions, graphql }) => {
 
       const categoriesTemplate = path.resolve(`./src/templates/category.js`)
 
-      _.each(result.data.allWordpressCategory.edges, edge => {
+      result.data.allWordpressCategory.edges.forEach(({ node }) => {
         createPage({
-          path: `/categories/${edge.node.slug}/`,
+          path: `/categories/${node.slug}/`,
           component: categoriesTemplate,
           context: {
-            name: edge.node.name,
-            slug: edge.node.slug,
+            name: node.name,
+            slug: node.slug,
           },
         })
       })
@@ -128,13 +127,13 @@ exports.createPages = ({ actions, graphql }) => {
 
       const tagsTemplate = path.resolve(`./src/templates/tag.js`)
 
-      _.each(result.data.allWordpressTag.edges, edge => {
+      result.data.allWordpressTag.edges.forEach(({ node }) => {
         createPage({
-          path: `/tags/${edge.node.slug}/`,
+          path: `/tags/${node.slug}/`,
           component: tagsTemplate,
           context: {
-            name: edge.node.name,
-            slug: edge.node.slug,
+            name: node.name,
+            slug: node.slug,
           },
         })
       })
