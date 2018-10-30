@@ -10,6 +10,7 @@ export const BlogPostTemplate = ({
   tags,
   title,
   date,
+  author,
   helmet,
 }) => {
   return (
@@ -23,7 +24,10 @@ export const BlogPostTemplate = ({
             </h1>
             <div dangerouslySetInnerHTML={{ __html: content }} />
             <div style={{ marginTop: `4rem` }}>
-              <p>{date}</p>
+              <p>
+                {date} - posted by{' '}
+                <Link to={`/author/${author.slug}`}>{author.name}</Link>
+              </p>
               {categories && categories.length ? (
                 <div>
                   <h4>Categories</h4>
@@ -76,6 +80,7 @@ const BlogPost = ({ data }) => {
         tags={post.tags}
         title={post.title}
         date={post.date}
+        author={post.author}
       />
     </Layout>
   )
@@ -109,6 +114,10 @@ export const pageQuery = graphql`
         slug
       }
       tags {
+        name
+        slug
+      }
+      author {
         name
         slug
       }
