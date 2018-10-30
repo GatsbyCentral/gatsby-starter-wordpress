@@ -10,6 +10,7 @@ const Navbar = () => (
         allWordpressPage(sort: { fields: wordpress_id }, limit: 5) {
           edges {
             node {
+              id
               title
               slug
             }
@@ -29,7 +30,11 @@ const Navbar = () => (
           </div>
           <div className="navbar-start">
             {data.allWordpressPage.edges.map(edge => (
-              <Link className="navbar-item" to={edge.node.slug}>
+              <Link
+                className="navbar-item"
+                to={edge.node.slug}
+                key={edge.node.id}
+              >
                 {edge.node.title}
               </Link>
             ))}
