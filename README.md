@@ -25,3 +25,4 @@ This starter was forked from the netlify starter by the
 were gratefully received from the following folks:
 
 * https://github.com/tomByrer
+* https://github.com/dajocarter
