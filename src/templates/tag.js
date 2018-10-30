@@ -1,49 +1,29 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import PostList from '../components/PostList'
 
-class TagRoute extends React.Component {
-  render() {
-    const posts = this.props.data.allWordpressPost.edges
-    const postLinks = posts.map(post => (
-      <li key={post.node.slug}>
-        <Link to={`/${post.node.slug}`}>
-          <h2 className="is-size-2">{post.node.title}</h2>
-        </Link>
-      </li>
-    ))
-    const tag = this.props.pageContext.name
-    const title = this.props.data.site.siteMetadata.title
-    const totalCount = this.props.data.allWordpressPost.totalCount
-    const tagHeader = `${totalCount} post${
-      totalCount === 1 ? '' : 's'
-    } tagged with “${tag}”`
+const Tag = props => {
+  const { data, pageContext } = props
+  const { edges: posts, totalCount } = data.allWordpressPost
+  const { title: siteTitle } = data.site.siteMetadata
+  const { name: tag } = pageContext
+  const title = `${totalCount} post${
+    totalCount === 1 ? '' : 's'
+  } with the tag ${tag}`
 
-    return (
-      <Layout>
-        <section className="section">
-          <Helmet title={`${tag} | ${title}`} />
-          <div className="container content">
-            <div className="columns">
-              <div
-                className="column is-10 is-offset-1"
-                style={{ marginBottom: '6rem' }}
-              >
-                <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
-                <ul className="taglist">{postLinks}</ul>
-              </div>
-            </div>
-          </div>
-        </section>
-      </Layout>
-    )
-  }
+  return (
+    <Layout>
+      <Helmet title={`${tag} | ${siteTitle}`} />
+      <PostList posts={posts} title={title} />
+    </Layout>
+  )
 }
 
-export default TagRoute
+export default Tag
 
-export const tagPageQuery = graphql`
+export const pageQuery = graphql`
   query TagPage($slug: String!) {
     site {
       siteMetadata {
@@ -54,7 +34,7 @@ export const tagPageQuery = graphql`
       totalCount
       edges {
         node {
-          ...PostFields
+          ...PostListFields
         }
       }
     }

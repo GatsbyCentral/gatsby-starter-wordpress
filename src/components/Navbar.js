@@ -31,7 +31,11 @@ const Navbar = () => (
           </div>
           <div className="navbar-start">
             {data.allWordpressPage.edges.map(edge => (
-              <Link className="navbar-item" to={edge.node.fields.path}>
+              <Link
+                className="navbar-item"
+                to={edge.node.slug}
+                key={edge.node.slug}
+              >
                 {edge.node.title}
               </Link>
             ))}

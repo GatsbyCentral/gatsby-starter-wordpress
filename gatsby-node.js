@@ -158,6 +158,38 @@ exports.createPages = ({ actions, graphql }) => {
         })
       })
     })
+    .then(() => {
+      return graphql(`
+        {
+          allWordpressWpUsers {
+            edges {
+              node {
+                id
+                slug
+              }
+            }
+          }
+        }
+      `)
+    })
+    .then(result => {
+      if (result.errors) {
+        result.errors.forEach(e => console.error(e.toString()))
+        return Promise.reject(result.errors)
+      }
+
+      const authorTemplate = path.resolve(`./src/templates/author.js`)
+
+      _.each(result.data.allWordpressWpUsers.edges, edge => {
+        createPage({
+          path: `/author/${edge.node.slug}`,
+          component: authorTemplate,
+          context: {
+            id: edge.node.id,
+          },
+        })
+      })
+    })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
