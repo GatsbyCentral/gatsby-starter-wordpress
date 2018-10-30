@@ -12,7 +12,6 @@ exports.createPages = ({ actions, graphql }) => {
             id
             slug
             status
-            template
           }
         }
       }
@@ -25,8 +24,13 @@ exports.createPages = ({ actions, graphql }) => {
       }
 
       const pageTemplate = path.resolve(`./src/templates/page.js`)
+      let pages = result.data.allWordpressPage.edges
+      // Only create pages for published content in production
+      if (process.env.NODE_ENV === 'production') {
+        pages = pages.filter(({ node }) => node.status === 'publish')
+      }
 
-      result.data.allWordpressPage.edges.forEach(({ node }) => {
+      pages.forEach(({ node }) => {
         createPage({
           path: `/${node.slug}/`,
           component: pageTemplate,
@@ -44,6 +48,7 @@ exports.createPages = ({ actions, graphql }) => {
               node {
                 id
                 slug
+                status
               }
             }
           }
@@ -57,9 +62,13 @@ exports.createPages = ({ actions, graphql }) => {
       }
 
       const postTemplate = path.resolve(`./src/templates/post.js`)
-
+      let posts = result.data.allWordpressPost.edges
+      // Only create pages for published content in production
+      if (process.env.NODE_ENV === 'production') {
+        posts = posts.filter(({ node }) => node.status === 'publish')
+      }
       // Iterate over the array of posts
-      result.data.allWordpressPost.edges.forEach(({ node }) => {
+      posts.forEach(({ node }) => {
         // Create the Gatsby page for this WordPress post
         createPage({
           path: `/${node.slug}/`,
