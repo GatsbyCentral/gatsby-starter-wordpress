@@ -27,6 +27,16 @@ export default class IndexPage extends React.Component {
                   </Link>
                   <span> &bull; </span>
                   <small>{post.date}</small>
+                  <span> &bull; </span>
+                  <small>
+                    Posted by{' '}
+                    <Link
+                      className="has-text-primary"
+                      to={`/author/${post.author.slug}/`}
+                    >
+                      {post.author.name}
+                    </Link>
+                  </small>
                 </p>
                 <div>
                   <div
@@ -65,6 +75,7 @@ export const pageQuery = graphql`
           excerpt
           author {
             name
+            slug
             avatar_urls {
               wordpress_48
             }
