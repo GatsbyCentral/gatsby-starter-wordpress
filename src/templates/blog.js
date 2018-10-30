@@ -3,15 +3,17 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import PostList from '../components/PostList'
+import Pagination from '../components/Pagination'
 
 export default class IndexPage extends React.Component {
   render() {
-    const { data } = this.props
+    const { data, pageContext } = this.props
     const { edges: posts } = data.allWordpressPost
 
     return (
       <Layout>
         <PostList posts={posts} title="Latest posts" />
+        <Pagination pageContext={pageContext} pathPrefix="/" />
       </Layout>
     )
   }
@@ -23,11 +25,19 @@ IndexPage.propTypes = {
       edges: PropTypes.array,
     }),
   }),
+  pageContext: PropTypes.shape({
+    currentPage: PropTypes.number,
+    numPages: PropTypes.number,
+  }),
 }
 
 export const pageQuery = graphql`
-  query IndexQuery {
-    allWordpressPost(sort: { fields: date, order: DESC }) {
+  query IndexQuery($limit: Int!, $skip: Int!) {
+    allWordpressPost(
+      sort: { fields: date, order: DESC }
+      limit: $limit
+      skip: $skip
+    ) {
       edges {
         node {
           ...PostListFields
