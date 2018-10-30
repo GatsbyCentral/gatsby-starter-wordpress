@@ -2,6 +2,41 @@ const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
+/**
+ * Create nested paths
+ * e.g., /grandparent/parent/node-slug
+ * and add to node
+ */
+exports.sourceNodes = ({ getNodes, actions }) => {
+  const { createNodeField } = actions
+
+  // Grag all page nodes
+  const pageNodes = getNodes().filter(
+    node => node.internal.type === 'wordpress__PAGE'
+  )
+
+  // Build each node's path
+  pageNodes.forEach(node => {
+    // Save the original node for use down below
+    const original = node
+    // Start with the node's slug
+    let nestedSlug = `/${node.slug}/`
+    // Recursively check for a parent and prepend parent's slug to path
+    while (node.wordpress_parent) {
+      node = pageNodes.find(
+        parentNode => node.wordpress_parent === parentNode.wordpress_id
+      )
+      nestedSlug = `/${node.slug}${nestedSlug}`
+    }
+    // Add full path to node -- available at node.fields.path
+    createNodeField({
+      node: original,
+      name: `path`,
+      value: nestedSlug,
+    })
+  })
+}
+
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
@@ -11,7 +46,9 @@ exports.createPages = ({ actions, graphql }) => {
         edges {
           node {
             id
-            slug
+            fields {
+              path
+            }
             status
             template
           }
@@ -29,7 +66,7 @@ exports.createPages = ({ actions, graphql }) => {
 
       _.each(result.data.allWordpressPage.edges, edge => {
         createPage({
-          path: `/${edge.node.slug}/`,
+          path: edge.node.fields.path,
           component: pageTemplate,
           context: {
             id: edge.node.id,
