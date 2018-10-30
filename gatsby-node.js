@@ -67,13 +67,15 @@ exports.createPages = ({ actions, graphql }) => {
       }
 
       const postTemplate = path.resolve(`./src/templates/post.js`)
+      const blogTemplate = path.resolve(`./src/templates/blog.js`)
+      const posts = result.data.allWordpressPost.edges
 
       // Build a list of categories and tags
       const categories = []
       const tags = []
 
       // Iterate over the array of posts
-      _.each(result.data.allWordpressPost.edges, edge => {
+      _.each(posts, edge => {
         // Add this post's categories and tags to the global list
         _.each(edge.node.tags, tag => {
           tags.push(tag)
@@ -88,6 +90,22 @@ exports.createPages = ({ actions, graphql }) => {
           component: postTemplate,
           context: {
             id: edge.node.id,
+          },
+        })
+      })
+
+      // Create a paginated blog, e.g., /, /page/2, /page/3
+      const postsPerPage = 10
+      const numBlogPages = Math.ceil(posts.length / postsPerPage)
+      Array.from({ length: numBlogPages }, (item, index) => {
+        createPage({
+          path: index === 0 ? `/` : `/page/${index + 1}`,
+          component: blogTemplate,
+          context: {
+            limit: postsPerPage,
+            skip: index * postsPerPage,
+            numPages: numBlogPages,
+            currentPage: index + 1,
           },
         })
       })
