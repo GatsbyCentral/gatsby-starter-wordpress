@@ -14,27 +14,13 @@ exports.sourceNodes = ({ getNodes, actions }) => {
   const pageNodes = getNodes().filter(
     node => node.internal.type === 'wordpress__PAGE'
   )
-
+  const sourceURL = `https://wpdemo.gatsbycentral.com`
   // Build each node's path
   pageNodes.forEach(node => {
-    // Save the original node for use down below
-    const original = node
-    // Start with the node's slug
-    let nestedSlug = `/${node.slug}/`
-    // Recursively check for a parent and prepend parent's slug to path
-    while (node.wordpress_parent) {
-      node = pageNodes.find(
-        parentNode => node.wordpress_parent === parentNode.wordpress_id
-      )
-      if (node && node.slug) {
-        nestedSlug = `/${node.slug}${nestedSlug}`
-      } else {
-        break
-      }
-    }
+    const nestedSlug = `/${node.link.replace(sourceURL, '')}/`
     // Add full path to node -- available at node.fields.path
     createNodeField({
-      node: original,
+      node,
       name: `path`,
       value: nestedSlug,
     })
