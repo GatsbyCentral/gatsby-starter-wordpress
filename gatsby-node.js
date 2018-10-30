@@ -26,7 +26,11 @@ exports.sourceNodes = ({ getNodes, actions }) => {
       node = pageNodes.find(
         parentNode => node.wordpress_parent === parentNode.wordpress_id
       )
-      nestedSlug = `/${node.slug}${nestedSlug}`
+      if (node && node.slug) {
+        nestedSlug = `/${node.slug}${nestedSlug}`
+      } else {
+        break
+      }
     }
     // Add full path to node -- available at node.fields.path
     createNodeField({
