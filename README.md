@@ -18,6 +18,7 @@ Demo: https://gatsby-starter-wordpress.netlify.com/
 
 ### Known Limitations
 
+* This is based on the [netlify starter](https://github.com/netlify-templates/gatsby-starter-netlify-cms) which uses [bulma](https://bulma.io). This adds 150KB to every built page.
 * Your WordPress site must have at least 1 post with 1 tag, or the starter will crash
 * Nested pages / categories will not render with nested pages
   - A WordPress page like `/about/team/` will render on Gatsby as `/team/`
