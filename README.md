@@ -25,6 +25,10 @@ Demo: https://gatsby-starter-wordpress.netlify.com/
   - Likewise for categories
   - Discussion here https://github.com/GatsbyCentral/gatsby-starter-wordpress/issues/24
 
+## CSS Processing
+
+This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gatsby-plugin-purgecss/) and [bulma](https://bulma.io/). The bulma build would otherwise be ~170K which adds 170K to each of your built HTML pages. However, with purgecss this is reduced 90%.
+
 ## Contributors
 
 This starter was forked from the netlify starter by the
