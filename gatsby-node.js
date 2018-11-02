@@ -1,6 +1,7 @@
 const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
+const { paginate } = require('gatsby-awesome-pagination')
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -95,19 +96,12 @@ exports.createPages = ({ actions, graphql }) => {
       })
 
       // Create a paginated blog, e.g., /, /page/2, /page/3
-      const postsPerPage = 10
-      const numBlogPages = Math.ceil(posts.length / postsPerPage)
-      Array.from({ length: numBlogPages }, (item, index) => {
-        createPage({
-          path: index === 0 ? `/` : `/page/${index + 1}`,
-          component: blogTemplate,
-          context: {
-            limit: postsPerPage,
-            skip: index * postsPerPage,
-            numPages: numBlogPages,
-            currentPage: index + 1,
-          },
-        })
+      paginate({
+        createPage,
+        items: posts,
+        itemsPerPage: 10,
+        pathPrefix: ({ pageNumber }) => (pageNumber === 0 ? `/` : `/page`),
+        component: blogTemplate,
       })
 
       const tagsTemplate = path.resolve(`./src/templates/tag.js`)
