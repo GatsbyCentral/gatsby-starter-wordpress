@@ -14,7 +14,6 @@ exports.createPages = ({ actions, graphql }) => {
             id
             slug
             status
-            template
           }
         }
       }
@@ -28,12 +27,13 @@ exports.createPages = ({ actions, graphql }) => {
 
       const pageTemplate = path.resolve(`./src/templates/page.js`)
 
-      _.each(result.data.allWordpressPage.edges, edge => {
+      // Call `createPage()` once per WordPress page
+      _.each(result.data.allWordpressPage.edges, ({ node: page }) => {
         createPage({
-          path: `/${edge.node.slug}/`,
+          path: `/${page.slug}/`,
           component: pageTemplate,
           context: {
-            id: edge.node.id,
+            id: page.id,
           },
         })
       })
@@ -46,15 +46,6 @@ exports.createPages = ({ actions, graphql }) => {
               node {
                 id
                 slug
-                modified
-                tags {
-                  name
-                  slug
-                }
-                categories {
-                  name
-                  slug
-                }
               }
             }
           }
@@ -71,26 +62,14 @@ exports.createPages = ({ actions, graphql }) => {
       const blogTemplate = path.resolve(`./src/templates/blog.js`)
       const posts = result.data.allWordpressPost.edges
 
-      // Build a list of categories and tags
-      const categories = []
-      const tags = []
-
       // Iterate over the array of posts
-      _.each(posts, edge => {
-        // Add this post's categories and tags to the global list
-        _.each(edge.node.tags, tag => {
-          tags.push(tag)
-        })
-        _.each(edge.node.categories, category => {
-          categories.push(category)
-        })
-
+      _.each(posts, ({ node: post }) => {
         // Create the Gatsby page for this WordPress post
         createPage({
-          path: `/${edge.node.slug}/`,
+          path: `/${post.slug}/`,
           component: postTemplate,
           context: {
-            id: edge.node.id,
+            id: post.id,
           },
         })
       })
@@ -103,16 +82,32 @@ exports.createPages = ({ actions, graphql }) => {
         pathPrefix: ({ pageNumber }) => (pageNumber === 0 ? `/` : `/page`),
         component: blogTemplate,
       })
+    })
+    .then(() => {
+      return graphql(`
+        {
+          allWordpressCategory(filter: { count: { gt: 0 } }) {
+            edges {
+              node {
+                id
+                name
+                slug
+              }
+            }
+          }
+        }
+      `)
+    })
+    .then(result => {
+      if (result.errors) {
+        result.errors.forEach(e => console.error(e.toString()))
+        return Promise.reject(result.errors)
+      }
 
-      const tagsTemplate = path.resolve(`./src/templates/tag.js`)
       const categoriesTemplate = path.resolve(`./src/templates/category.js`)
 
-      // Create a unique list of categories and tags
-      const uniqueCategories = _.uniqBy(categories, 'slug')
-      const uniqueTags = _.uniqBy(tags, 'slug')
-
-      // For each category and tag, create a Gatsby page
-      _.each(uniqueCategories, cat => {
+      // Create a Gatsby page for each WordPress Category
+      _.each(result.data.allWordpressCategory.edges, ({ node: cat }) => {
         createPage({
           path: `/categories/${cat.slug}/`,
           component: categoriesTemplate,
@@ -122,7 +117,33 @@ exports.createPages = ({ actions, graphql }) => {
           },
         })
       })
-      _.each(uniqueTags, tag => {
+    })
+    .then(() => {
+      return graphql(`
+        {
+          allWordpressTag(filter: { count: { gt: 0 } }) {
+            edges {
+              node {
+                id
+                name
+                slug
+              }
+            }
+          }
+        }
+      `)
+    })
+
+    .then(result => {
+      if (result.errors) {
+        result.errors.forEach(e => console.error(e.toString()))
+        return Promise.reject(result.errors)
+      }
+
+      const tagsTemplate = path.resolve(`./src/templates/tag.js`)
+
+      // Create a Gatsby page for each WordPress tag
+      _.each(result.data.allWordpressTag.edges, ({ node: tag }) => {
         createPage({
           path: `/tags/${tag.slug}/`,
           component: tagsTemplate,
@@ -155,12 +176,12 @@ exports.createPages = ({ actions, graphql }) => {
 
       const authorTemplate = path.resolve(`./src/templates/author.js`)
 
-      _.each(result.data.allWordpressWpUsers.edges, edge => {
+      _.each(result.data.allWordpressWpUsers.edges, ({ node: author }) => {
         createPage({
-          path: `/author/${edge.node.slug}`,
+          path: `/author/${author.slug}`,
           component: authorTemplate,
           context: {
-            id: edge.node.id,
+            id: author.id,
           },
         })
       })
