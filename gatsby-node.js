@@ -1,6 +1,10 @@
 const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
+const { paginate } = require('gatsby-awesome-pagination')
+
+const getOnlyPublished = edges =>
+  _.filter(edges, ({ node }) => node.status === 'publish')
 
 const config = require('./gatsby-config.js')
 
@@ -60,7 +64,6 @@ exports.createPages = ({ actions, graphql }) => {
               path
             }
             status
-            template
           }
         }
       }
@@ -74,12 +77,23 @@ exports.createPages = ({ actions, graphql }) => {
 
       const pageTemplate = path.resolve(`./src/templates/page.js`)
 
-      _.each(result.data.allWordpressPage.edges, edge => {
+      // Only publish pages with a `status === 'publish'` in production. This
+      // excludes drafts, future posts, etc. They will appear in development,
+      // but not in a production build.
+
+      const allPages = result.data.allWordpressPage.edges
+      const pages =
+        process.env.NODE_ENV === 'production'
+          ? getOnlyPublished(allPages)
+          : allPages
+
+      // Call `createPage()` once per WordPress page
+      _.each(pages, ({ node: page }) => {
         createPage({
-          path: edge.node.fields.path,
+          path: page.fields.path,
           component: pageTemplate,
           context: {
-            id: edge.node.id,
+            id: page.id,
           },
         })
       })
@@ -92,15 +106,6 @@ exports.createPages = ({ actions, graphql }) => {
               node {
                 id
                 slug
-                modified
-                tags {
-                  name
-                  slug
-                }
-                categories {
-                  name
-                  slug
-                }
               }
             }
           }
@@ -114,40 +119,61 @@ exports.createPages = ({ actions, graphql }) => {
       }
 
       const postTemplate = path.resolve(`./src/templates/post.js`)
+      const blogTemplate = path.resolve(`./src/templates/blog.js`)
 
-      // Build a list of categories and tags
-      const categories = []
-      const tags = []
+      // In production builds, filter for only published posts.
+      const allPosts = result.data.allWordpressPost.edges
+      const posts =
+        process.env.NODE_ENV === 'production'
+          ? getOnlyPublished(allPosts)
+          : allPosts
 
       // Iterate over the array of posts
-      _.each(result.data.allWordpressPost.edges, edge => {
-        // Add this post's categories and tags to the global list
-        _.each(edge.node.tags, tag => {
-          tags.push(tag)
-        })
-        _.each(edge.node.categories, category => {
-          categories.push(category)
-        })
-
+      _.each(posts, ({ node: post }) => {
         // Create the Gatsby page for this WordPress post
         createPage({
-          path: `/${edge.node.slug}/`,
+          path: `/${post.slug}/`,
           component: postTemplate,
           context: {
-            id: edge.node.id,
+            id: post.id,
           },
         })
       })
 
-      const tagsTemplate = path.resolve(`./src/templates/tag.js`)
+      // Create a paginated blog, e.g., /, /page/2, /page/3
+      paginate({
+        createPage,
+        items: posts,
+        itemsPerPage: 10,
+        pathPrefix: ({ pageNumber }) => (pageNumber === 0 ? `/` : `/page`),
+        component: blogTemplate,
+      })
+    })
+    .then(() => {
+      return graphql(`
+        {
+          allWordpressCategory(filter: { count: { gt: 0 } }) {
+            edges {
+              node {
+                id
+                name
+                slug
+              }
+            }
+          }
+        }
+      `)
+    })
+    .then(result => {
+      if (result.errors) {
+        result.errors.forEach(e => console.error(e.toString()))
+        return Promise.reject(result.errors)
+      }
+
       const categoriesTemplate = path.resolve(`./src/templates/category.js`)
 
-      // Create a unique list of categories and tags
-      const uniqueCategories = _.uniqBy(categories, 'slug')
-      const uniqueTags = _.uniqBy(tags, 'slug')
-
-      // For each category and tag, create a Gatsby page
-      _.each(uniqueCategories, cat => {
+      // Create a Gatsby page for each WordPress Category
+      _.each(result.data.allWordpressCategory.edges, ({ node: cat }) => {
         createPage({
           path: `/categories/${cat.slug}/`,
           component: categoriesTemplate,
@@ -157,7 +183,33 @@ exports.createPages = ({ actions, graphql }) => {
           },
         })
       })
-      _.each(uniqueTags, tag => {
+    })
+    .then(() => {
+      return graphql(`
+        {
+          allWordpressTag(filter: { count: { gt: 0 } }) {
+            edges {
+              node {
+                id
+                name
+                slug
+              }
+            }
+          }
+        }
+      `)
+    })
+
+    .then(result => {
+      if (result.errors) {
+        result.errors.forEach(e => console.error(e.toString()))
+        return Promise.reject(result.errors)
+      }
+
+      const tagsTemplate = path.resolve(`./src/templates/tag.js`)
+
+      // Create a Gatsby page for each WordPress tag
+      _.each(result.data.allWordpressTag.edges, ({ node: tag }) => {
         createPage({
           path: `/tags/${tag.slug}/`,
           component: tagsTemplate,
@@ -190,12 +242,12 @@ exports.createPages = ({ actions, graphql }) => {
 
       const authorTemplate = path.resolve(`./src/templates/author.js`)
 
-      _.each(result.data.allWordpressWpUsers.edges, edge => {
+      _.each(result.data.allWordpressWpUsers.edges, ({ node: author }) => {
         createPage({
-          path: `/author/${edge.node.slug}`,
+          path: `/author/${author.slug}`,
           component: authorTemplate,
           context: {
-            id: edge.node.id,
+            id: author.id,
           },
         })
       })

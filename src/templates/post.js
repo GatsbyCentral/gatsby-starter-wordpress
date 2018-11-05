@@ -11,11 +11,9 @@ export const BlogPostTemplate = ({
   title,
   date,
   author,
-  helmet,
 }) => {
   return (
     <section className="section">
-      {helmet || ''}
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
@@ -33,7 +31,7 @@ export const BlogPostTemplate = ({
                   <h4>Categories</h4>
                   <ul className="taglist">
                     {categories.map(category => (
-                      <li key={`${category}cat`}>
+                      <li key={`${category.slug}cat`}>
                         <Link to={`/categories/${category.slug}/`}>
                           {category.name}
                         </Link>
@@ -47,7 +45,7 @@ export const BlogPostTemplate = ({
                   <h4>Tags</h4>
                   <ul className="taglist">
                     {tags.map(tag => (
-                      <li key={`${tag}tag`}>
+                      <li key={`${tag.slug}tag`}>
                         <Link to={`/tags/${tag.slug}/`}>{tag.name}</Link>
                       </li>
                     ))}
@@ -65,7 +63,6 @@ export const BlogPostTemplate = ({
 BlogPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   title: PropTypes.string,
-  helmet: PropTypes.instanceOf(Helmet),
 }
 
 const BlogPost = ({ data }) => {
@@ -73,9 +70,9 @@ const BlogPost = ({ data }) => {
 
   return (
     <Layout>
+      <Helmet title={`${post.title} | Blog`} />
       <BlogPostTemplate
         content={post.content}
-        helmet={<Helmet title={`${post.title} | Blog`} />}
         categories={post.categories}
         tags={post.tags}
         title={post.title}

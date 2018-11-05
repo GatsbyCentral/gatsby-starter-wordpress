@@ -6,8 +6,10 @@
   "dependencies": {
     "bulma": "^0.7.0",
     "gatsby": "^2.0.0",
+    "gatsby-awesome-pagination": "^0.3.3",
     "gatsby-plugin-lodash": "^3.0.1",
     "gatsby-plugin-netlify": "^2.0.0",
+    "gatsby-plugin-purgecss": "^2.4.0",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sass": "^2.0.1",
     "gatsby-plugin-sharp": "^2.0.5",
