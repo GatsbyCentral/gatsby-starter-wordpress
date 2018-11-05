@@ -11,11 +11,9 @@ export const BlogPostTemplate = ({
   title,
   date,
   author,
-  helmet,
 }) => {
   return (
     <section className="section">
-      {helmet || ''}
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
@@ -65,7 +63,6 @@ export const BlogPostTemplate = ({
 BlogPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   title: PropTypes.string,
-  helmet: PropTypes.instanceOf(Helmet),
 }
 
 const BlogPost = ({ data }) => {
@@ -73,9 +70,9 @@ const BlogPost = ({ data }) => {
 
   return (
     <Layout>
+      <Helmet title={`${post.title} | Blog`} />
       <BlogPostTemplate
         content={post.content}
-        helmet={<Helmet title={`${post.title} | Blog`} />}
         categories={post.categories}
         tags={post.tags}
         title={post.title}
