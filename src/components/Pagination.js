@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-const Pagination = ({ pageContext, pathPrefix }) => {
+const Pagination = ({ pageContext }) => {
   const { previousPagePath, nextPagePath } = pageContext
 
   return (

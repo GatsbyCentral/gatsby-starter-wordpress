@@ -13,7 +13,7 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <PostList posts={posts} title="Latest posts" />
-        <Pagination pageContext={pageContext} pathPrefix="/" />
+        <Pagination pageContext={pageContext} />
       </Layout>
     )
   }
