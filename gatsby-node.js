@@ -18,9 +18,9 @@ const wpConfigOptions = _.chain(config)
   })
   .get('options')
   .value()
-const wpBaseUrl = `${_.get('baseUrl', wpConfigOptions)}://${_.get(
-  'baseUrl',
-  wpConfigOptions
+const wpBaseUrl = `${_.get(wpConfigOptions, 'protocol')}://${_.get(
+  wpConfigOptions,
+  'baseUrl'
 )}`
 
 /**
