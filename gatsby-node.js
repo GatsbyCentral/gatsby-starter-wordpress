@@ -3,6 +3,9 @@ const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { paginate } = require('gatsby-awesome-pagination')
 
+const getOnlyPublished = edges =>
+  _.filter(edges, ({ node }) => node.status === 'publish')
+
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
@@ -27,8 +30,18 @@ exports.createPages = ({ actions, graphql }) => {
 
       const pageTemplate = path.resolve(`./src/templates/page.js`)
 
+      // Only publish pages with a `status === 'publish'` in production. This
+      // excludes drafts, future posts, etc. They will appear in development,
+      // but not in a production build.
+
+      const allPages = result.data.allWordpressPage.edges
+      const pages =
+        process.env.NODE_ENV === 'production'
+          ? getOnlyPublished(allPages)
+          : allPages
+
       // Call `createPage()` once per WordPress page
-      _.each(result.data.allWordpressPage.edges, ({ node: page }) => {
+      _.each(pages, ({ node: page }) => {
         createPage({
           path: `/${page.slug}/`,
           component: pageTemplate,
@@ -60,7 +73,13 @@ exports.createPages = ({ actions, graphql }) => {
 
       const postTemplate = path.resolve(`./src/templates/post.js`)
       const blogTemplate = path.resolve(`./src/templates/blog.js`)
-      const posts = result.data.allWordpressPost.edges
+
+      // In production builds, filter for only published posts.
+      const allPosts = result.data.allWordpressPost.edges
+      const posts =
+        process.env.NODE_ENV === 'production'
+          ? getOnlyPublished(allPosts)
+          : allPosts
 
       // Iterate over the array of posts
       _.each(posts, ({ node: post }) => {
