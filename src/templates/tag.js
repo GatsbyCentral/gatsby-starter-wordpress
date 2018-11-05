@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import PostList from '../components/PostList'
+import Pagination from '../components/Pagination'
 
 const Tag = props => {
   const { data, pageContext } = props
@@ -17,6 +18,7 @@ const Tag = props => {
     <Layout>
       <Helmet title={`${tag} | ${siteTitle}`} />
       <PostList posts={posts} title={title} />
+      <Pagination pageContext={pageContext} />
     </Layout>
   )
 }
@@ -24,13 +26,17 @@ const Tag = props => {
 export default Tag
 
 export const pageQuery = graphql`
-  query TagPage($slug: String!) {
+  query TagPage($slug: String!, $limit: Int!, $skip: Int!) {
     site {
       siteMetadata {
         title
       }
     }
-    allWordpressPost(filter: { tags: { slug: { eq: $slug } } }) {
+    allWordpressPost(
+      filter: { categories: { slug: { eq: $slug } } }
+      limit: $limit
+      skip: $skip
+    ) {
       totalCount
       edges {
         node {

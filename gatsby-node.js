@@ -170,6 +170,15 @@ exports.createPages = ({ actions, graphql }) => {
               }
             }
           }
+          allWordpressPost {
+            edges {
+              node {
+                tags {
+                  slug
+                }
+              }
+            }
+          }
         }
       `)
     })
@@ -184,8 +193,18 @@ exports.createPages = ({ actions, graphql }) => {
 
       // Create a Gatsby page for each WordPress tag
       _.each(result.data.allWordpressTag.edges, ({ node: tag }) => {
-        createPage({
-          path: `/tags/${tag.slug}/`,
+        // Filter for posts attached to tag
+        const tagPosts = result.data.allWordpressPost.edges.filter(
+          ({ node }) =>
+            !!node.tags.filter(postTag => postTag.slug === tag.slug).length
+        )
+        // Create a paginated tag archive, e.g., /tag/<slug>, /tag/<slug>/page/2,
+        paginate({
+          createPage,
+          items: tagPosts,
+          itemsPerPage: 10,
+          pathPrefix: ({ pageNumber }) =>
+            pageNumber === 0 ? `/tag/${tag.slug}` : `/tag/${tag.slug}/page`,
           component: tagsTemplate,
           context: {
             name: tag.name,
