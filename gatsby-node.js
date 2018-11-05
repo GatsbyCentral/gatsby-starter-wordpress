@@ -1,4 +1,5 @@
 const _ = require('lodash')
+const URL = require('url-parse')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 const { paginate } = require('gatsby-awesome-pagination')
@@ -41,12 +42,13 @@ exports.sourceNodes = ({ getNodes, actions }) => {
   )
   // Build each node's path
   pageNodes.forEach(node => {
-    const nestedSlug = `/${node.link.replace(wpBaseUrl, '')}/`
+    const nodeURL = new URL(node.link)
+    const nodeSlug = nodeURL.query === '' ? nodeURL.pathname : node.slug
     // Add full path to node -- available at node.fields.path
     createNodeField({
       node,
       name: `path`,
-      value: nestedSlug,
+      value: nodeSlug,
     })
   })
 }
