@@ -31,7 +31,7 @@ export const BlogPostTemplate = ({
                   <h4>Categories</h4>
                   <ul className="taglist">
                     {categories.map(category => (
-                      <li key={`${category}cat`}>
+                      <li key={`${category.slug}cat`}>
                         <Link to={`/categories/${category.slug}/`}>
                           {category.name}
                         </Link>
@@ -45,7 +45,7 @@ export const BlogPostTemplate = ({
                   <h4>Tags</h4>
                   <ul className="taglist">
                     {tags.map(tag => (
-                      <li key={`${tag}tag`}>
+                      <li key={`${tag.slug}tag`}>
                         <Link to={`/tags/${tag.slug}/`}>{tag.name}</Link>
                       </li>
                     ))}
