@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import PostList from '../components/PostList'
+import Pagination from '../components/Pagination'
 
 const Category = props => {
   const { data, pageContext } = props
@@ -17,6 +18,7 @@ const Category = props => {
     <Layout>
       <Helmet title={`${category} | ${siteTitle}`} />
       <PostList posts={posts} title={title} />
+      <Pagination pageContext={pageContext} />
     </Layout>
   )
 }
@@ -24,13 +26,17 @@ const Category = props => {
 export default Category
 
 export const pageQuery = graphql`
-  query CategoryPage($slug: String!) {
+  query CategoryPage($slug: String!, $limit: Int!, $skip: Int!) {
     site {
       siteMetadata {
         title
       }
     }
-    allWordpressPost(filter: { categories: { slug: { eq: $slug } } }) {
+    allWordpressPost(
+      filter: { categories: { slug: { eq: $slug } } }
+      limit: $limit
+      skip: $skip
+    ) {
       totalCount
       edges {
         node {

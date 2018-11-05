@@ -114,6 +114,15 @@ exports.createPages = ({ actions, graphql }) => {
               }
             }
           }
+          allWordpressPost {
+            edges {
+              node {
+                categories {
+                  slug
+                }
+              }
+            }
+          }
         }
       `)
     })
@@ -124,11 +133,23 @@ exports.createPages = ({ actions, graphql }) => {
       }
 
       const categoriesTemplate = path.resolve(`./src/templates/category.js`)
-
       // Create a Gatsby page for each WordPress Category
       _.each(result.data.allWordpressCategory.edges, ({ node: cat }) => {
-        createPage({
-          path: `/categories/${cat.slug}/`,
+        // Filter for posts attached to category
+        const catPosts = result.data.allWordpressPost.edges.filter(
+          ({ node }) =>
+            !!node.categories.filter(postCat => postCat.slug === cat.slug)
+              .length
+        )
+        // Create a paginated category archive, e.g., /category/<slug>, /category/<slug>/page/2,
+        paginate({
+          createPage,
+          items: catPosts,
+          itemsPerPage: 10,
+          pathPrefix: ({ pageNumber }) =>
+            pageNumber === 0
+              ? `/category/${cat.slug}`
+              : `/category/${cat.slug}/page`,
           component: categoriesTemplate,
           context: {
             name: cat.name,
