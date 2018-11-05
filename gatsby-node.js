@@ -1,6 +1,7 @@
 const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
+const { paginate } = require('gatsby-awesome-pagination')
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -67,13 +68,15 @@ exports.createPages = ({ actions, graphql }) => {
       }
 
       const postTemplate = path.resolve(`./src/templates/post.js`)
+      const blogTemplate = path.resolve(`./src/templates/blog.js`)
+      const posts = result.data.allWordpressPost.edges
 
       // Build a list of categories and tags
       const categories = []
       const tags = []
 
       // Iterate over the array of posts
-      _.each(result.data.allWordpressPost.edges, edge => {
+      _.each(posts, edge => {
         // Add this post's categories and tags to the global list
         _.each(edge.node.tags, tag => {
           tags.push(tag)
@@ -90,6 +93,15 @@ exports.createPages = ({ actions, graphql }) => {
             id: edge.node.id,
           },
         })
+      })
+
+      // Create a paginated blog, e.g., /, /page/2, /page/3
+      paginate({
+        createPage,
+        items: posts,
+        itemsPerPage: 10,
+        pathPrefix: ({ pageNumber }) => (pageNumber === 0 ? `/` : `/page`),
+        component: blogTemplate,
       })
 
       const tagsTemplate = path.resolve(`./src/templates/tag.js`)
