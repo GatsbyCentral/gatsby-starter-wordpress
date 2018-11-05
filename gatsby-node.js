@@ -224,6 +224,15 @@ exports.createPages = ({ actions, graphql }) => {
               }
             }
           }
+          allWordpressPost {
+            edges {
+              node {
+                author {
+                  slug
+                }
+              }
+            }
+          }
         }
       `)
     })
@@ -236,11 +245,23 @@ exports.createPages = ({ actions, graphql }) => {
       const authorTemplate = path.resolve(`./src/templates/author.js`)
 
       _.each(result.data.allWordpressWpUsers.edges, ({ node: author }) => {
-        createPage({
-          path: `/author/${author.slug}`,
+        // Filter for posts attached to author
+        const authorPosts = result.data.allWordpressPost.edges.filter(
+          ({ node }) => node.author.slug === author.slug
+        )
+        // Create a paginated author archive, e.g., /author/<slug>, /author/<slug>/page/2,
+        paginate({
+          createPage,
+          items: authorPosts,
+          itemsPerPage: 10,
+          pathPrefix: ({ pageNumber }) =>
+            pageNumber === 0
+              ? `/author/${author.slug}`
+              : `/author/${author.slug}/page`,
           component: authorTemplate,
           context: {
-            id: author.id,
+            name: author.name,
+            slug: author.slug,
           },
         })
       })

@@ -3,25 +3,20 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import PostList from '../components/PostList'
+import Pagination from '../components/Pagination'
 
 const Author = props => {
-  const { data } = props
-  const { authored_wordpress__POST, name } = data.wordpressWpUsers
-  const totalCount =
-    (authored_wordpress__POST && authored_wordpress__POST.length) || 0
+  const { data, pageContext } = props
+  const { name } = pageContext
+  const { edges: posts, totalCount } = data.allWordpressPost
   const { title: siteTitle } = data.site.siteMetadata
   const title = `${totalCount} post${totalCount === 1 ? '' : 's'} by ${name}`
-
-  // The `authored_wordpress__POST` returns a simple array instead of an array
-  // of edges / nodes. We therefore need to convert the array here.
-  const posts = authored_wordpress__POST.map(post => ({
-    node: post,
-  }))
 
   return (
     <Layout>
       <Helmet title={`${name} | ${siteTitle}`} />
       <PostList posts={posts} title={title} />
+      <Pagination pageContext={pageContext} />
     </Layout>
   )
 }
@@ -29,16 +24,22 @@ const Author = props => {
 export default Author
 
 export const pageQuery = graphql`
-  query AuthorPage($id: String!) {
+  query AuthorPage($slug: String!, $limit: Int!, $skip: Int!) {
     site {
       siteMetadata {
         title
       }
     }
-    wordpressWpUsers(id: { eq: $id }) {
-      name
-      authored_wordpress__POST {
-        ...PostListFields
+    allWordpressPost(
+      filter: { author: { slug: { eq: $slug } } }
+      limit: $limit
+      skip: $skip
+    ) {
+      totalCount
+      edges {
+        node {
+          ...PostListFields
+        }
       }
     }
   }
