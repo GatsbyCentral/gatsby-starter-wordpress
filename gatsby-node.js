@@ -138,8 +138,8 @@ exports.createPages = ({ actions, graphql }) => {
         // Filter for posts attached to category
         const catPosts = result.data.allWordpressPost.edges.filter(
           ({ node }) =>
-            !!node.categories.filter(postCat => postCat.slug === cat.slug)
-              .length
+            node.categories &&
+            node.categories.filter(postCat => postCat.slug === cat.slug)
         )
         // Create a paginated category archive, e.g., /category/<slug>, /category/<slug>/page/2,
         paginate({
@@ -196,7 +196,7 @@ exports.createPages = ({ actions, graphql }) => {
         // Filter for posts attached to tag
         const tagPosts = result.data.allWordpressPost.edges.filter(
           ({ node }) =>
-            !!node.tags.filter(postTag => postTag.slug === tag.slug).length
+            node.tags && node.tags.filter(postTag => postTag.slug === tag.slug)
         )
         // Create a paginated tag archive, e.g., /tag/<slug>, /tag/<slug>/page/2,
         paginate({
