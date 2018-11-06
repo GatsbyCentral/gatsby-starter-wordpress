@@ -33,7 +33,7 @@ export const pageQuery = graphql`
       }
     }
     allWordpressPost(
-      filter: { categories: { slug: { eq: $slug } } }
+      filter: { tags: { slug: { eq: $slug } } }
       limit: $limit
       skip: $skip
     ) {
