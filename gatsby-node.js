@@ -59,6 +59,7 @@ exports.createPages = ({ actions, graphql }) => {
               node {
                 id
                 slug
+                status
               }
             }
           }
