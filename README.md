@@ -2,20 +2,22 @@
 
 This starter is forked from the
 [gatsby-starter-netlify-cms](https://github.com/netlify-templates/gatsby-starter-netlify-cms)
-and modified to use WordPress instead of netlify-cms.
+and modified to use WordPress instead of netlify-cms, using the [gatsby-source-wordpress](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress) plugin as the data connector.
 
 Demo: https://gatsby-starter-wordpress.netlify.com/
 
 > **WARNING**: Using `yarn upgrade` or `npm update` will break the site. See [GatsbyCentral/gatsby-starter-wordpress#36](https://github.com/GatsbyCentral/gatsby-starter-wordpress/issues/36) and [gatsbyjs/gatsby#10262](https://github.com/gatsbyjs/gatsby/issues/10262) for more info. Hopefully we'll have a resolution soon. - 19 Dec 2018
 
-## Use it now
+## Use It Now
 
     gatsby new NAME https://github.com/GatsbyCentral/gatsby-starter-wordpress
 
 * Edit `gatsby-config.js`, change `baseUrl`
   - Make sure you have at least 1 post and 1 page on your WordPress site
   - Make sure at least 1 post has at least 1 tag
+* Ensure the permalink structure in your WordPress installation is set to `Post Name` instead of the deafult `Plain`, or else the `gatsby-source-wordpress` plugin won't be able to communicate with WordPress
 * Rejoice
+  - For more information on the source plugin, check out the [gatsby-source-wordpress](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress) repository page
   - File any [issues here](https://github.com/GatsbyCentral/gatsby-starter-wordpress/issues)
 
 ### Known Limitations
