@@ -4,28 +4,28 @@
   "version": "0.1.0",
   "author": "GatsbyCentral.com",
   "dependencies": {
-    "bulma": "^0.7.0",
-    "gatsby": "^2.0.0",
+    "bulma": "^0.7.5",
+    "gatsby": "^2.15.14",
     "gatsby-awesome-pagination": "^0.3.3",
-    "gatsby-plugin-lodash": "^3.0.1",
-    "gatsby-plugin-netlify": "^2.0.0",
-    "gatsby-plugin-purgecss": "^3.1.0",
-    "gatsby-plugin-react-helmet": "^3.0.0",
-    "gatsby-plugin-sass": "^2.0.1",
-    "gatsby-plugin-sharp": "^2.0.5",
-    "gatsby-remark-images": "^2.0.1",
-    "gatsby-source-filesystem": "^2.0.1",
-    "gatsby-source-wordpress": "^3.0.1",
-    "gatsby-transformer-remark": "^2.1.1",
-    "gatsby-transformer-sharp": "^2.1.1",
+    "gatsby-plugin-lodash": "^3.1.7",
+    "gatsby-plugin-netlify": "^2.1.12",
+    "gatsby-plugin-purgecss": "^3.1.1",
+    "gatsby-plugin-react-helmet": "^3.1.7",
+    "gatsby-plugin-sass": "^2.1.14",
+    "gatsby-plugin-sharp": "^2.2.21",
+    "gatsby-remark-images": "^2.0.6",
+    "gatsby-source-filesystem": "^2.1.22",
+    "gatsby-source-wordpress": "^3.1.31",
+    "gatsby-transformer-remark": "^2.6.22",
+    "gatsby-transformer-sharp": "^2.2.14",
     "lodash": "^4.17.5",
-    "node-sass": "^4.9.2",
-    "parcel-bundler": "^1.9.4",
+    "node-sass": "^4.12.0",
+    "parcel-bundler": "^1.12.3",
     "prop-types": "^15.6.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.4.1",
-    "react-helmet": "^5.2.0",
-    "uuid": "^3.2.1"
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1",
+    "uuid": "^3.3.3"
   },
   "keywords": [
     "gatsby"
@@ -42,10 +42,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb": "^17.1.1",
     "eslint-config-prettier": "^3.1.0",
-    "prettier": "^1.7.4",
-    "rimraf": "^2.6.2"
+    "prettier": "^1.18.2",
+    "rimraf": "^2.7.1"
   },
   "prettier": {
     "trailingComma": "es5",
