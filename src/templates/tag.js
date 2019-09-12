@@ -30,7 +30,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allWordpressPost(filter: { tags: { slug: { eq: $slug } } }) {
+    allWordpressPost(filter: { tags: { elemMatch: { slug: { eq: $slug } } } }) {
       totalCount
       edges {
         node {
