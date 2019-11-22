@@ -5,7 +5,7 @@
   "author": "GatsbyCentral.com",
   "dependencies": {
     "bulma": "^0.7.5",
-    "gatsby": "^2.15.14",
+    "gatsby": "^2.18.1",
     "gatsby-awesome-pagination": "^0.3.3",
     "gatsby-plugin-lodash": "^3.1.7",
     "gatsby-plugin-netlify": "^2.1.12",
