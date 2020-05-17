@@ -35,6 +35,10 @@ This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gats
 
 Check the [gatsby-source-wordpress](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress) plugin for more information. If you want to copy the demo content, you can grab the [WordPress XML export here](https://wpdemo.gatsbycentral.com/gatsbystarterwordpress.WordPress.2019-09-12.xml) and import it into your WordPress site as a starting point.
 
+## Support
+
+Please post support questions on StackOverflow or other similar sites. Please only post issues here if you have a bug to report with a reproduction. Unfortunately we're not able to provide support here.
+
 ## Contributors
 
 This starter was forked from the netlify starter by the
