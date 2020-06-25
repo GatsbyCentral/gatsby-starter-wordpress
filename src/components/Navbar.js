@@ -11,7 +11,6 @@ const Navbar = () => (
           edges {
             node {
               title
-              
               path
             }
           }

@@ -97,7 +97,6 @@ export default BlogPost
 export const pageQuery = graphql`
   fragment PostFields on wordpress__POST {
     id
-    
     path
     content
     date(formatString: "MMMM DD, YYYY")
@@ -107,23 +106,19 @@ export const pageQuery = graphql`
     wordpressPost(id: { eq: $id }) {
       id
       title
-      
       path
       content
       date(formatString: "MMMM DD, YYYY")
       categories {
         name
-        
         path
       }
       tags {
         name
-        
         path
       }
       author {
-        name
-        
+        name 
         path
       }
     }

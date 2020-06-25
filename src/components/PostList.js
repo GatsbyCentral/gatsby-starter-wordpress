@@ -63,14 +63,12 @@ export const pageQuery = graphql`
     excerpt
     author {
       name
-      
       path
       avatar_urls {
         wordpress_48
       }
     }
     date(formatString: "MMMM DD, YYYY")
-    
     path
   }
 `

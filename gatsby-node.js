@@ -15,7 +15,6 @@ exports.createPages = ({ actions, graphql }) => {
         edges {
           node {
             id
-            
             status
             path
           }
@@ -59,7 +58,6 @@ exports.createPages = ({ actions, graphql }) => {
             edges {
               node {
                 id
-                
                 status
                 path
               }
@@ -113,7 +111,6 @@ exports.createPages = ({ actions, graphql }) => {
               node {
                 id
                 name
-                
                 path
               }
             }
@@ -149,7 +146,6 @@ exports.createPages = ({ actions, graphql }) => {
               node {
                 id
                 name
-                
                 path
               }
             }
@@ -184,8 +180,7 @@ exports.createPages = ({ actions, graphql }) => {
           allWordpressWpUsers {
             edges {
               node {
-                id
-                
+                id 
                 path
               }
             }
