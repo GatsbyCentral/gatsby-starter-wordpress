@@ -24,14 +24,14 @@ const Category = props => {
 export default Category
 
 export const pageQuery = graphql`
-  query CategoryPage($slug: String!) {
+  query CategoryPage($path: String!) {
     site {
       siteMetadata {
         title
       }
     }
     allWordpressPost(
-      filter: { categories: { elemMatch: { slug: { eq: $slug } } } }
+      filter: { categories: { elemMatch: { path: { eq: $path } } } }
     ) {
       totalCount
       edges {

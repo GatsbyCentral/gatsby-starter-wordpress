@@ -19,13 +19,16 @@ export default class IndexPage extends React.Component {
               key={post.id}
             >
               <p>
-                <Link className="has-text-primary" to={post.slug}>
+                <Link className="has-text-primary" to={post.path}>
                   {post.title}
                 </Link>
                 <span> &bull; </span>
                 <small>
-                  {post.date} - posted by{' '}
-                  <Link to={`/author/${post.author.slug}`}>
+                  {post.date}
+                  {' '}
+- posted by
+                  {' '}
+                  <Link to={`/author/${post.author.path}`}>
                     {post.author.name}
                   </Link>
                 </small>
@@ -36,7 +39,7 @@ export default class IndexPage extends React.Component {
                     __html: post.excerpt.replace(/<p class="link-more.*/, ''),
                   }}
                 />
-                <Link className="button is-small" to={post.slug}>
+                <Link className="button is-small" to={post.path}>
                   Keep Reading →
                 </Link>
               </div>
@@ -60,12 +63,14 @@ export const pageQuery = graphql`
     excerpt
     author {
       name
-      slug
+      
+      path
       avatar_urls {
         wordpress_48
       }
     }
     date(formatString: "MMMM DD, YYYY")
-    slug
+    
+    path
   }
 `

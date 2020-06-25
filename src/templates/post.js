@@ -23,16 +23,19 @@ export const BlogPostTemplate = ({
             <div dangerouslySetInnerHTML={{ __html: content }} />
             <div style={{ marginTop: `4rem` }}>
               <p>
-                {date} - posted by{' '}
-                <Link to={`/author/${author.slug}`}>{author.name}</Link>
+                {date}
+                {' '}
+- posted by
+                {' '}
+                <Link to={`${author.path}`}>{author.name}</Link>
               </p>
               {categories && categories.length ? (
                 <div>
                   <h4>Categories</h4>
                   <ul className="taglist">
                     {categories.map(category => (
-                      <li key={`${category.slug}cat`}>
-                        <Link to={`/categories/${category.slug}/`}>
+                      <li key={`${category.path}`}>
+                        <Link to={`${category.path}`}>
                           {category.name}
                         </Link>
                       </li>
@@ -45,8 +48,8 @@ export const BlogPostTemplate = ({
                   <h4>Tags</h4>
                   <ul className="taglist">
                     {tags.map(tag => (
-                      <li key={`${tag.slug}tag`}>
-                        <Link to={`/tags/${tag.slug}/`}>{tag.name}</Link>
+                      <li key={`${tag.path}`}>
+                        <Link to={`${tag.path}/`}>{tag.name}</Link>
                       </li>
                     ))}
                   </ul>
@@ -94,7 +97,8 @@ export default BlogPost
 export const pageQuery = graphql`
   fragment PostFields on wordpress__POST {
     id
-    slug
+    
+    path
     content
     date(formatString: "MMMM DD, YYYY")
     title
@@ -103,20 +107,24 @@ export const pageQuery = graphql`
     wordpressPost(id: { eq: $id }) {
       id
       title
-      slug
+      
+      path
       content
       date(formatString: "MMMM DD, YYYY")
       categories {
         name
-        slug
+        
+        path
       }
       tags {
         name
-        slug
+        
+        path
       }
       author {
         name
-        slug
+        
+        path
       }
     }
   }

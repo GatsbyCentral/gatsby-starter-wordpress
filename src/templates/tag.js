@@ -24,13 +24,13 @@ const Tag = props => {
 export default Tag
 
 export const pageQuery = graphql`
-  query TagPage($slug: String!) {
+  query TagPage($path: String!) {
     site {
       siteMetadata {
         title
       }
     }
-    allWordpressPost(filter: { tags: { elemMatch: { slug: { eq: $slug } } } }) {
+    allWordpressPost(filter: { tags: { elemMatch: { path: { eq: $path } } } }) {
       totalCount
       edges {
         node {
