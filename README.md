@@ -11,11 +11,11 @@ Demo: https://gatsby-starter-wordpress.netlify.com/
     gatsby new NAME https://github.com/GatsbyCentral/gatsby-starter-wordpress
 
 * Edit `gatsby-config.js`, change `baseUrl`
-  - Make sure you have at least 1 post and 1 page on your WordPress site
-  - Make sure at least 1 post has at least 1 tag
-* Ensure the permalink structure in your WordPress installation is set to `Post Name` instead of the deafult `Plain`, or else the `gatsby-source-wordpress` plugin won't be able to communicate with WordPress
+  - Make sure you have at least 1 post and 1 page on your WordPress site.
+  - Make sure at least 1 post has at least 1 tag.
+* Ensure the permalink structure in your WordPress installation is set to `Post Name` instead of the deafult `Plain`, or else the `gatsby-source-wordpress` plugin won't be able to communicate with WordPress.
 * Rejoice
-  - For more information on the source plugin, check out the [gatsby-source-wordpress](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress) repository page
+  - For more information on the source plugin, check out this [gatsby-source-wordpress](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress) repository page
   - File any [issues here](https://github.com/GatsbyCentral/gatsby-starter-wordpress/issues)
 
 ### Known Limitations
@@ -29,7 +29,7 @@ Demo: https://gatsby-starter-wordpress.netlify.com/
 
 ## CSS Processing
 
-This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gatsby-plugin-purgecss/) and [bulma](https://bulma.io/). The bulma build would otherwise be ~170K which adds 170K to each of your built HTML pages. However, with purgecss this is reduced 90%.
+This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gatsby-plugin-purgecss/) and [bulma](https://bulma.io/). The bulma build would otherwise be ~170K which adds 170K to each of your built HTML pages. However, with purgeCSS this is reduced 90%.
 
 ## WordPress Setup
 
