@@ -6,6 +6,8 @@ and modified to use WordPress instead of netlify-cms, using the [gatsby-source-w
 
 Demo: https://gatsby-starter-wordpress.netlify.com/
 
+> **Looking for maintainer**: If you're interested in taking over the maintenance of this starter, please reach out in an issue. We're not working with Gatsby any more (it got way too complicated, hello nextjs), and so we're not maintaining this.
+
 ## Use It Now
 
     gatsby new NAME https://github.com/GatsbyCentral/gatsby-starter-wordpress
@@ -34,6 +36,10 @@ This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gats
 ## WordPress Setup
 
 Check the [gatsby-source-wordpress](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress) plugin for more information. If you want to copy the demo content, you can grab the [WordPress XML export here](https://wpdemo.gatsbycentral.com/gatsbystarterwordpress.WordPress.2019-09-12.xml) and import it into your WordPress site as a starting point.
+
+## Support
+
+Please post support questions on StackOverflow or other similar sites. Please only post issues here if you have a bug to report with a reproduction. Unfortunately we're not able to provide support here.
 
 ## Contributors
 
