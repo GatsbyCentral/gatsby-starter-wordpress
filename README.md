@@ -6,6 +6,8 @@ and modified to use WordPress instead of netlify-cms, using the [gatsby-source-w
 
 Demo: https://gatsby-starter-wordpress.netlify.com/
 
+> **Looking for maintainer**: If you're interested in taking over the maintenance of this starter, please reach out in an issue. We're not working with Gatsby any more (it got way too complicated, hello nextjs), and so we're not maintaining this.
+
 ## Use It Now
 
     gatsby new NAME https://github.com/GatsbyCentral/gatsby-starter-wordpress
